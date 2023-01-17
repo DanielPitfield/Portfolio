@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .title {
+    display: flex;
+    margin: 0.5em;
+    font-size: 6em;
+    justify-content: center;
+  }
+
+  .subTitle {
+    display: flex;
+    margin: 0.3em;
+    font-size: 3em;
+    justify-content: center;
+  }
+}
