@@ -15,8 +15,7 @@ const ProjectViewCodeButton = (props: ProjectViewCodeButtonProps) => {
       target="_blank"
       rel="noreferrer"
     >
-      <BiCodeAlt />
-      View Code
+      <BiCodeAlt /> View Code
     </a>
   );
 };
