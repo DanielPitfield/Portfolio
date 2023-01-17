@@ -1,18 +1,18 @@
 import styles from "../styles/Skill.module.scss";
 
-import TypeScript from "/Images/typescript.svg";
-import JavaScript from "/Images/javascript.svg";
-import jQuery from "/Images/jquery.svg";
-import React from "/Images/react.svg";
-import NextJS from "/Images/nextjs.svg";
-import tRPC from "/Images/trpc.svg";
-import PHP from "/Images/php.svg";
-import MySQL from "/Images/mysql.svg";
-import HTML from "/Images/html.svg";
-import SAAS from "/Images/saas.svg";
-import Tailwind from "/Images/tailwind.svg";
-import Bootstrap from "/Images/bootstrap.svg";
-import CSS from "/Images/css.svg";
+import TypeScript from "/Images/Skills/typescript.svg";
+import JavaScript from "/Images/Skills/javascript.svg";
+import jQuery from "/Images/Skills/jquery.svg";
+import React from "/Images/Skills/react.svg";
+import NextJS from "/Images/Skills/nextjs.svg";
+import tRPC from "/Images/Skills/trpc.svg";
+import PHP from "/Images/Skills/php.svg";
+import MySQL from "/Images/Skills/mysql.svg";
+import HTML from "/Images/Skills/html.svg";
+import SAAS from "/Images/Skills/saas.svg";
+import Tailwind from "/Images/Skills/tailwind.svg";
+import Bootstrap from "/Images/Skills/bootstrap.svg";
+import CSS from "/Images/Skills/css.svg";
 
 interface SkillProps {
   size: "small" | "large";
@@ -40,7 +40,7 @@ const skillNames = Skills.map((skill) => skill.name);
 export type SkillName = typeof skillNames[number];
 
 // What are the names of the skills that are to be displayed in the 'Skills' section?
-export const displayedSkills: SkillName[] = Skills.filter(skill => skill.isDisplayed).map(skill => skill.name);
+export const displayedSkills: SkillName[] = Skills.filter((skill) => skill.isDisplayed).map((skill) => skill.name);
 
 const Skill = (props: SkillProps) => {
   const iconPath = Skills.find((skill) => skill.name === props.skill)?.icon;

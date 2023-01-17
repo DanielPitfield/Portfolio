@@ -1,6 +1,6 @@
 import { SkillName } from "../components/Skill";
 
-import CrimeMapper from "/Images/crimeMapper.png";
+import CrimeMapper from "/Images/Projects/crimeMapper.png";
 
 export type ProjectConfig = {
   name: string;
@@ -8,7 +8,7 @@ export type ProjectConfig = {
   image: string;
   skills: SkillName[];
   demoConfig: { isDemoEnabled: false; reason?: string } | { isDemoEnabled: true; link: string };
-  viewCodeConfig: { isViewCodeEnabled: false, reason?: string } | { isViewCodeEnabled: true; link: string };
+  viewCodeConfig: { isViewCodeEnabled: false; reason?: string } | { isViewCodeEnabled: true; link: string };
 };
 
 export const Projects: ProjectConfig[] = [
@@ -69,7 +69,8 @@ export const Projects: ProjectConfig[] = [
   // TODO: Older variant
   {
     name: "Noughts and Crosses",
-    description: "Play against an AI opponent (which uses the unbeatable Minimax algortihm on the highest difficulty) or as two human players",
+    description:
+      "Play against an AI opponent (which uses the unbeatable Minimax algortihm on the highest difficulty) or as two human players",
     image: "",
     skills: ["TypeScript", "React", "Tailwind"],
     demoConfig: { isDemoEnabled: false },
