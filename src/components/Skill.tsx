@@ -20,25 +20,27 @@ interface SkillProps {
   showLabel: boolean;
 }
 
-// TODO: isDisplayed property? Some skills are used in projects but shouldn't be shown within Skills section
 const Skills = [
-  { name: "TypeScript", icon: TypeScript },
-  { name: "JavaScript", icon: JavaScript },
-  { name: "jQuery", icon: jQuery },
-  { name: "React", icon: React },
-  { name: "Next.js", icon: NextJS },
-  { name: "tRPC", icon: tRPC },
-  { name: "PHP", icon: PHP },
-  { name: "MySQL", icon: MySQL },
-  { name: "HTML", icon: HTML },
-  { name: "SAAS", icon: SAAS },
-  { name: "Tailwind", icon: Tailwind },
-  { name: "Bootstrap", icon: Bootstrap },
-  { name: "CSS", icon: CSS },
+  { name: "TypeScript", icon: TypeScript, isDisplayed: true },
+  { name: "JavaScript", icon: JavaScript, isDisplayed: true },
+  { name: "jQuery", icon: jQuery, isDisplayed: false },
+  { name: "React", icon: React, isDisplayed: true },
+  { name: "Next.js", icon: NextJS, isDisplayed: true },
+  { name: "tRPC", icon: tRPC, isDisplayed: true },
+  { name: "PHP", icon: PHP, isDisplayed: false },
+  { name: "MySQL", icon: MySQL, isDisplayed: false },
+  { name: "HTML", icon: HTML, isDisplayed: true },
+  { name: "SAAS", icon: SAAS, isDisplayed: true },
+  { name: "Tailwind", icon: Tailwind, isDisplayed: false },
+  { name: "Bootstrap", icon: Bootstrap, isDisplayed: false },
+  { name: "CSS", icon: CSS, isDisplayed: true },
 ] as const;
 
 const skillNames = Skills.map((skill) => skill.name);
 export type SkillName = typeof skillNames[number];
+
+// What are the names of the skills that are to be displayed in the 'Skills' section?
+export const displayedSkills: SkillName[] = Skills.filter(skill => skill.isDisplayed).map(skill => skill.name);
 
 const Skill = (props: SkillProps) => {
   const iconPath = Skills.find((skill) => skill.name === props.skill)?.icon;
