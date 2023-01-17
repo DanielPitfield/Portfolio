@@ -10,7 +10,7 @@ import SAAS from "/Images/saas.svg";
 import CSS from "/Images/css.svg";
 
 interface SkillProps {
-  skill: Skill;
+  skill: SkillName;
   showLabel: boolean;
 }
 
@@ -26,7 +26,7 @@ const Skills = [
 ] as const;
 
 const skillNames = Skills.map((skill) => skill.name);
-export type Skill = typeof skillNames[number];
+export type SkillName = typeof skillNames[number];
 
 const Skill = (props: SkillProps) => {
   const iconPath = Skills.find((skill) => skill.name === props.skill)?.icon;
