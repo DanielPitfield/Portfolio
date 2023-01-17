@@ -1,4 +1,4 @@
-import styles from "../styles/Skills.module.scss";
+import styles from "../styles/SkillsSection.module.scss";
 
 import Skill, { SkillName } from "./Skill";
 
@@ -6,10 +6,11 @@ interface SkillsProps {
   skills: SkillName[];
 }
 
-const Skills = (props: SkillsProps) => {
+const SkillsSection = (props: SkillsProps) => {
   return (
     <section>
       <h1 className={styles.title}>Skills</h1>
+
       <div className={styles.list}>
         {props.skills.map((skill) => (
           <Skill key={skill} skill={skill} showLabel />
@@ -19,4 +20,4 @@ const Skills = (props: SkillsProps) => {
   );
 };
 
-export default Skills;
+export default SkillsSection;
