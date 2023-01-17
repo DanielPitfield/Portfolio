@@ -35,7 +35,12 @@ const Project = (props: ProjectProps) => {
         </div>
       </div>
 
-      <ProjectImage image={selectedVariant.image} name={selectedVariant.name} demoConfig={selectedVariant.demoConfig} />
+      <ProjectImage
+        image={selectedVariant.image}
+        name={selectedVariant.name}
+        demoConfig={selectedVariant.demoConfig}
+        viewCodeConfig={selectedVariant.viewCodeConfig}
+      />
     </article>
   );
 };

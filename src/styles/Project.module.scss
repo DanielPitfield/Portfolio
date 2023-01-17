@@ -15,7 +15,6 @@
     flex-grow: 1;
     flex-shrink: 0;
     margin: 1em;
-    margin-right: 5em;
 
     .title {
       display: flex;
@@ -75,7 +74,11 @@
     }
   }
 
-  .image {
-    flex-grow: 1;
+  .imageLink {
+    margin: 1em;
+
+    .image {
+      border-radius: 6px;
+    }
   }
 }
