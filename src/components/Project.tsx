@@ -1,5 +1,7 @@
-import { ProjectConfig } from "../data/projects";
+
 import styles from "../styles/Project.module.scss";
+
+import { ProjectConfig } from "../data/projects";
 import ProjectDemoButton from "./ProjectDemoButton";
 import ProjectImage from "./ProjectImage";
 import ProjectViewCodeButton from "./ProjectViewCodeButton";

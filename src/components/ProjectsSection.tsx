@@ -5,7 +5,7 @@ import Project from "./Project";
 
 const ProjectsSection = () => {
   return (
-    <section>
+    <section className={styles.wrapper}>
       <h1 className={styles.title}>Projects</h1>
 
       <div>

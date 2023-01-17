@@ -1,9 +1,16 @@
-.title {
+.wrapper {
   display: flex;
-  margin: 0.5em;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-}
+  min-height: 50vh;
 
-.list {
-  display: flex;
+  .title {
+    display: flex;
+    margin: 1em;
+  }
+
+  .list {
+    display: flex;
+  }
 }

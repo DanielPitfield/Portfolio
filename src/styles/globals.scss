@@ -2,11 +2,7 @@
 
 :root {
   font-family: "Kanit", sans-serif;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +18,9 @@ a {
 }
 
 body {
+  font-family: inherit;
+  background-color: #2e3141;
+  color: inherit;
   padding: 0;
   margin: 0;
   min-width: 320px;
@@ -51,15 +50,5 @@ button {
   &:focus,
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: black;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }

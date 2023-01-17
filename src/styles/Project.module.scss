@@ -1,11 +1,21 @@
 .wrapper {
-  min-width: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0.5em;
+  background-color: #353849;
+  border-radius: 6px;
 
   .link {
-    padding: 1em;
-    margin: 0.5em;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    margin-right: 1em;
     border: 1px solid grey;
     border-radius: 4px;
+  }
+
+  .list {
+    display: flex;
   }
 }

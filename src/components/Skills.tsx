@@ -11,7 +11,7 @@ const Skills = (props: SkillsProps) => {
   // Display the provided skills with labels (as a section)
   if (props.size === "section") {
     return (
-      <section>
+      <section className={styles.wrapper}>
         <h1 className={styles.title}>Skills</h1>
 
         <div className={styles.list}>
