@@ -28,11 +28,16 @@
       text-decoration: none;
       padding: 1em 1.5em;
       margin-right: 0.8em;
+      background-color: inherit;
       letter-spacing: 0.1em;
       text-align: center;
       text-transform: uppercase;
       white-space: nowrap;
-      box-shadow: inset 0 0 0 2px rgb(255 255 255 / 13%);
+      box-shadow: inset 0 0 0 2px #ffffff21;
+
+      &:hover {
+        background-color: darken(#2e3141, 3%);
+      }
 
       &[data-is-disabled="true"] {
         cursor: not-allowed;
