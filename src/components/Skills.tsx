@@ -12,7 +12,7 @@ const Skills = (props: SkillsProps) => {
       <h1 className={styles.title}>Skills</h1>
       <div className={styles.list}>
         {props.skills.map((skill) => (
-          <Skill skill={skill} showLabel />
+          <Skill key={skill} skill={skill} showLabel />
         ))}
       </div>
     </section>
