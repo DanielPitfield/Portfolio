@@ -10,6 +10,7 @@ import SAAS from "/Images/saas.svg";
 import CSS from "/Images/css.svg";
 
 interface SkillProps {
+  size: "small" | "large";
   skill: SkillName;
   showLabel: boolean;
 }
@@ -37,8 +38,8 @@ const Skill = (props: SkillProps) => {
 
   // TODO: Centering icon
   return (
-    <div className={styles.wrapper}>
-      <img className={styles.icon} src={iconPath} alt={props.skill}></img>
+    <div className={styles.wrapper} data-size={props.size}>
+      <img className={styles.icon} data-size={props.size} src={iconPath} alt={props.skill}></img>
       {props.showLabel && <div className={styles.label}>{props.skill}</div>}
     </div>
   );

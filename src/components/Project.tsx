@@ -3,7 +3,7 @@ import styles from "../styles/Project.module.scss";
 import ProjectDemoButton from "./ProjectDemoButton";
 import ProjectImage from "./ProjectImage";
 import ProjectViewCodeButton from "./ProjectViewCodeButton";
-import SkillsSection from "./SkillsSection";
+import Skills from "./Skills";
 
 interface ProjectProps {
   projectConfig: ProjectConfig;
@@ -19,7 +19,7 @@ const Project = (props: ProjectProps) => {
       />
 
       <h3>{props.projectConfig.name}</h3>
-      <SkillsSection skills={props.projectConfig.skills} />
+      <Skills size="project" skills={props.projectConfig.skills} />
       <p>{props.projectConfig.description}</p>
 
       <ProjectDemoButton demoConfig={props.projectConfig.demoConfig} />

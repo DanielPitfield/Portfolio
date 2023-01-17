@@ -1,10 +1,10 @@
 import ProjectsSection from "./components/ProjectsSection";
-import SkillsSection from "./components/SkillsSection";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
     <div className="App">
-      <SkillsSection skills={["TypeScript", "JavaScript", "React", "Next.js", "tRPC", "HTML", "SAAS", "CSS"]} />
+      <Skills size="section" skills={["TypeScript", "JavaScript", "React", "Next.js", "tRPC", "HTML", "SAAS", "CSS"]} />
       <ProjectsSection />
     </div>
   );
