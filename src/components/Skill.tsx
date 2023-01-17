@@ -39,7 +39,13 @@ const Skill = (props: SkillProps) => {
   // TODO: Centering icon
   return (
     <div className={styles.wrapper} data-size={props.size}>
-      <img className={styles.icon} data-size={props.size} src={iconPath} alt={props.skill}></img>
+      <img
+        className={styles.icon}
+        data-size={props.size}
+        src={iconPath}
+        alt={props.skill}
+        title={!props.showLabel ? props.skill : undefined}
+      ></img>
       {props.showLabel && <div className={styles.label}>{props.skill}</div>}
     </div>
   );
