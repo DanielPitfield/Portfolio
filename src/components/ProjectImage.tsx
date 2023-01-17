@@ -9,7 +9,7 @@ interface ProjectImageProps {
 const ProjectImage = (props: ProjectImageProps) => {
   return (
     <a href={props.demoConfig.isDemoEnabled ? props.demoConfig.link : undefined} target="_blank" rel="noreferrer">
-      <img src={props.image} alt={props.name} />
+      <img src={props.image} alt={props.name} height={380} width={680} />
     </a>
   );
 };

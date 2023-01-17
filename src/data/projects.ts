@@ -9,7 +9,8 @@ export type ProjectConfig = {
   skills: SkillName[];
   demoConfig: { isDemoEnabled: false; reason?: string } | { isDemoEnabled: true; link: string };
   viewCodeConfig: { isViewCodeEnabled: false; reason?: string } | { isViewCodeEnabled: true; link: string };
-};
+  size: "small" | "large";
+}; 
 
 export const Projects: ProjectConfig[] = [
   {
@@ -19,6 +20,7 @@ export const Projects: ProjectConfig[] = [
     skills: ["TypeScript", "React", "SAAS"],
     demoConfig: { isDemoEnabled: false },
     viewCodeConfig: { isViewCodeEnabled: false },
+    size: "large",
   },
   {
     name: "F1 Dashboard",
@@ -27,6 +29,7 @@ export const Projects: ProjectConfig[] = [
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SAAS"],
     demoConfig: { isDemoEnabled: false },
     viewCodeConfig: { isViewCodeEnabled: false },
+    size: "large",
   },
   // TODO: NCIS, F1 quote contexts
   // TODO: Brian Badonde variant
@@ -37,6 +40,7 @@ export const Projects: ProjectConfig[] = [
     skills: ["TypeScript", "React", "Next.js", "SAAS"],
     demoConfig: { isDemoEnabled: false },
     viewCodeConfig: { isViewCodeEnabled: false },
+    size: "large",
   },
   {
     name: "Crime Mapper",
@@ -45,6 +49,7 @@ export const Projects: ProjectConfig[] = [
     skills: ["JavaScript", "jQuery", "PHP", "MySQL", "HTML", "Bootstrap"],
     demoConfig: { isDemoEnabled: false, reason: "Hosting costs" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Crime_Mapper" },
+    size: "large",
   },
   // TODO: Project sizes? (the projects below are smaller in scope and shouldn't occupy the same screen space as larger projects)
   {
@@ -54,6 +59,7 @@ export const Projects: ProjectConfig[] = [
     skills: ["TypeScript", "JavaScript", "React", "CSS"],
     demoConfig: { isDemoEnabled: false },
     viewCodeConfig: { isViewCodeEnabled: false },
+    size: "small",
   },
   {
     name: "Advent of Code",
@@ -65,6 +71,7 @@ export const Projects: ProjectConfig[] = [
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/advent-of-code-2022",
     },
+    size: "small",
   },
   // TODO: Older variant
   {
@@ -78,5 +85,6 @@ export const Projects: ProjectConfig[] = [
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/noughts-and-crosses-react",
     },
+    size: "small",
   },
 ];

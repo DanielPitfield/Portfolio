@@ -14,21 +14,22 @@ interface ProjectProps {
 // TODO: Project variants (e.g old/new noughts and crosses, daily quotes contexts)
 const Project = (props: ProjectProps) => {
   return (
-    <article className={styles.wrapper}>
+    <article className={styles.wrapper} data-size={props.projectConfig.size}>
+      <div className={styles.info}>
+        <h3 className={styles.title}>{props.projectConfig.name}</h3>
+        <Skills size="project" skills={props.projectConfig.skills} />
+        <p className={styles.description}>{props.projectConfig.description}</p>
+
+        <div className={styles.links}>
+          <ProjectDemoButton demoConfig={props.projectConfig.demoConfig} />
+          <ProjectViewCodeButton viewCodeConfig={props.projectConfig.viewCodeConfig} />
+        </div>
+      </div>
       <ProjectImage
         image={props.projectConfig.image}
         name={props.projectConfig.name}
         demoConfig={props.projectConfig.demoConfig}
       />
-
-      <h3 className={styles.title}>{props.projectConfig.name}</h3>
-      <Skills size="project" skills={props.projectConfig.skills} />
-      <p className={styles.description}>{props.projectConfig.description}</p>
-
-      <div className={styles.links}>
-        <ProjectDemoButton demoConfig={props.projectConfig.demoConfig} />
-        <ProjectViewCodeButton viewCodeConfig={props.projectConfig.viewCodeConfig} />
-      </div>
     </article>
   );
 };
