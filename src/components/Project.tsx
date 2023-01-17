@@ -1,4 +1,3 @@
-
 import styles from "../styles/Project.module.scss";
 
 import { ProjectConfig } from "../data/projects";
@@ -24,8 +23,10 @@ const Project = (props: ProjectProps) => {
       <Skills size="project" skills={props.projectConfig.skills} />
       <p className={styles.description}>{props.projectConfig.description}</p>
 
-      <ProjectDemoButton demoConfig={props.projectConfig.demoConfig} />
-      <ProjectViewCodeButton viewCodeConfig={props.projectConfig.viewCodeConfig} />
+      <div className={styles.links}>
+        <ProjectDemoButton demoConfig={props.projectConfig.demoConfig} />
+        <ProjectViewCodeButton viewCodeConfig={props.projectConfig.viewCodeConfig} />
+      </div>
     </article>
   );
 };

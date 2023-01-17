@@ -19,15 +19,20 @@
     margin: 0.5em 1em;
   }
 
-  .link {
-    cursor: pointer;
-    text-decoration: none;
-    padding: 1em 2em;
-    margin-right: 1em;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
-    box-shadow: inset 0 0 0 2px rgb(255 255 255 / 13%);
+  .links {
+    display: flex;
+    margin: 0.5em;
+
+    .link {
+      cursor: pointer;
+      text-decoration: none;
+      padding: 1em 1.5em;
+      margin-right: 0.8em;
+      letter-spacing: 0.1em;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      box-shadow: inset 0 0 0 2px rgb(255 255 255 / 13%);
+    }
   }
 }
