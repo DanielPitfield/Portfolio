@@ -33,6 +33,12 @@
       text-transform: uppercase;
       white-space: nowrap;
       box-shadow: inset 0 0 0 2px rgb(255 255 255 / 13%);
+
+      &[data-is-disabled="true"] {
+        cursor: not-allowed;
+        opacity: 80%;
+        color: grey;
+      }
     }
   }
 }
