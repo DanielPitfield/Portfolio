@@ -10,7 +10,8 @@ export type ProjectConfig = {
   demoConfig: { isDemoEnabled: false; reason?: string } | { isDemoEnabled: true; link: string };
   viewCodeConfig: { isViewCodeEnabled: false; reason?: string } | { isViewCodeEnabled: true; link: string };
   size: "small" | "large";
-}; 
+  additionalVariants?: ProjectConfig[];
+};
 
 export const Projects: ProjectConfig[] = [
   {
@@ -41,6 +42,26 @@ export const Projects: ProjectConfig[] = [
     demoConfig: { isDemoEnabled: false },
     viewCodeConfig: { isViewCodeEnabled: false },
     size: "large",
+    additionalVariants: [
+      {
+        name: "NCIS Quotes",
+        description: "",
+        image: "",
+        skills: ["TypeScript", "React", "Next.js", "SAAS"],
+        demoConfig: { isDemoEnabled: false },
+        viewCodeConfig: { isViewCodeEnabled: false },
+        size: "large",
+      },
+      {
+        name: "F1 Quotes",
+        description: "",
+        image: "",
+        skills: ["TypeScript", "React", "Next.js", "SAAS"],
+        demoConfig: { isDemoEnabled: false },
+        viewCodeConfig: { isViewCodeEnabled: false },
+        size: "large",
+      },
+    ],
   },
   {
     name: "Crime Mapper",
