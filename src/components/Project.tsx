@@ -10,6 +10,8 @@ interface ProjectProps {
   projectConfig: ProjectConfig;
 }
 
+// TODO: Carousel of images showing the project?
+// TODO: Project variants (e.g old/new noughts and crosses, daily quotes contexts)
 const Project = (props: ProjectProps) => {
   return (
     <article className={styles.wrapper}>

@@ -10,6 +10,7 @@ import PHP from "/Images/php.svg";
 import MySQL from "/Images/mysql.svg";
 import HTML from "/Images/html.svg";
 import SAAS from "/Images/saas.svg";
+import Tailwind from "/Images/tailwind.svg";
 import Bootstrap from "/Images/bootstrap.svg";
 import CSS from "/Images/css.svg";
 
@@ -31,6 +32,7 @@ const Skills = [
   { name: "MySQL", icon: MySQL },
   { name: "HTML", icon: HTML },
   { name: "SAAS", icon: SAAS },
+  { name: "Tailwind", icon: Tailwind },
   { name: "Bootstrap", icon: Bootstrap },
   { name: "CSS", icon: CSS },
 ] as const;
