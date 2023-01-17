@@ -3,14 +3,15 @@ import styles from "../styles/Project.module.scss";
 import { FaPlay } from "react-icons/fa";
 
 interface ProjectDemoButtonProps {
-  demoConfig: { isDemoEnabled: false } | { isDemoEnabled: true; link: string };
+  demoConfig: { isDemoEnabled: false; reason?: string } | { isDemoEnabled: true; link: string };
 }
 
 const ProjectDemoButton = (props: ProjectDemoButtonProps) => {
   return (
     <a
       className={styles.link}
-      data-status={props.demoConfig.isDemoEnabled}
+      data-is-disabled={!props.demoConfig.isDemoEnabled}
+      title={!props.demoConfig.isDemoEnabled && props.demoConfig.reason ? props.demoConfig.reason : undefined}
       href={props.demoConfig.isDemoEnabled ? props.demoConfig.link : undefined}
       target="_blank"
       rel="noreferrer"

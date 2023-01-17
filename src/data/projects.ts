@@ -7,8 +7,8 @@ export type ProjectConfig = {
   description: string;
   image: string;
   skills: SkillName[];
-  demoConfig: { isDemoEnabled: false } | { isDemoEnabled: true; link: string };
-  viewCodeConfig: { isViewCodeEnabled: false } | { isViewCodeEnabled: true; link: string };
+  demoConfig: { isDemoEnabled: false; reason?: string } | { isDemoEnabled: true; link: string };
+  viewCodeConfig: { isViewCodeEnabled: false, reason?: string } | { isViewCodeEnabled: true; link: string };
 };
 
 export const Projects: ProjectConfig[] = [
@@ -43,7 +43,7 @@ export const Projects: ProjectConfig[] = [
     description: "A web-based crime mapping, visualisation and analysis solution using the Google Maps JavaScript API",
     image: CrimeMapper,
     skills: ["JavaScript", "jQuery", "PHP", "MySQL", "HTML", "Bootstrap"],
-    demoConfig: { isDemoEnabled: false },
+    demoConfig: { isDemoEnabled: false, reason: "Hosting costs" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Crime_Mapper" },
   },
   // TODO: Project sizes? (the projects below are smaller in scope and shouldn't occupy the same screen space as larger projects)
@@ -60,7 +60,7 @@ export const Projects: ProjectConfig[] = [
     description: "Solutions to Advent of Code 2022",
     image: "",
     skills: ["TypeScript"],
-    demoConfig: { isDemoEnabled: false },
+    demoConfig: { isDemoEnabled: false, reason: "Run with npm package runner (npx ts-node script.ts)" },
     viewCodeConfig: {
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/advent-of-code-2022",
