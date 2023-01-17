@@ -7,15 +7,23 @@
   background-color: #353849;
   border-radius: 6px;
 
+  .title {
+    display: flex;
+    font-size: 2em;
+    margin: 0.5em 1em;
+  }
+
+  .description {
+    display: flex;
+    font-size: 1.2em;
+    margin: 0.5em 1em;
+  }
+
   .link {
     text-decoration: none;
     padding: 0.8em 1.5em;
     margin-right: 1em;
     border: 1px solid grey;
     border-radius: 4px;
-  }
-
-  .list {
-    display: flex;
   }
 }

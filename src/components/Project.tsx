@@ -20,9 +20,9 @@ const Project = (props: ProjectProps) => {
         demoConfig={props.projectConfig.demoConfig}
       />
 
-      <h3>{props.projectConfig.name}</h3>
+      <h3 className={styles.title}>{props.projectConfig.name}</h3>
       <Skills size="project" skills={props.projectConfig.skills} />
-      <p>{props.projectConfig.description}</p>
+      <p className={styles.description}>{props.projectConfig.description}</p>
 
       <ProjectDemoButton demoConfig={props.projectConfig.demoConfig} />
       <ProjectViewCodeButton viewCodeConfig={props.projectConfig.viewCodeConfig} />
