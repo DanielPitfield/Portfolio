@@ -2,11 +2,15 @@ import styles from "../styles/Skill.module.scss";
 
 import TypeScript from "/Images/typescript.svg";
 import JavaScript from "/Images/javascript.svg";
+import jQuery from "/Images/jquery.svg";
 import React from "/Images/react.svg";
 import NextJS from "/Images/nextjs.svg";
 import tRPC from "/Images/trpc.svg";
+import PHP from "/Images/php.svg";
+import MySQL from "/Images/mysql.svg";
 import HTML from "/Images/html.svg";
 import SAAS from "/Images/saas.svg";
+import Bootstrap from "/Images/bootstrap.svg";
 import CSS from "/Images/css.svg";
 
 interface SkillProps {
@@ -15,14 +19,19 @@ interface SkillProps {
   showLabel: boolean;
 }
 
+// TODO: isDisplayed property? Some skills are used in projects but shouldn't be shown within Skills section
 const Skills = [
   { name: "TypeScript", icon: TypeScript },
   { name: "JavaScript", icon: JavaScript },
+  { name: "jQuery", icon: jQuery },
   { name: "React", icon: React },
   { name: "Next.js", icon: NextJS },
   { name: "tRPC", icon: tRPC },
+  { name: "PHP", icon: PHP },
+  { name: "MySQL", icon: MySQL },
   { name: "HTML", icon: HTML },
   { name: "SAAS", icon: SAAS },
+  { name: "Bootstrap", icon: Bootstrap },
   { name: "CSS", icon: CSS },
 ] as const;
 

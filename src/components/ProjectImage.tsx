@@ -1,7 +1,7 @@
 import styles from "../styles/Project.module.scss";
 
 interface ProjectImageProps {
-  imagePath: string;
+  image: string;
   name: string;
   demoConfig: { isDemoEnabled: false } | { isDemoEnabled: true; link: string };
 }
@@ -9,7 +9,7 @@ interface ProjectImageProps {
 const ProjectImage = (props: ProjectImageProps) => {
   return (
     <a href={props.demoConfig.isDemoEnabled ? props.demoConfig.link : undefined} target="_blank" rel="noreferrer">
-      <img src={props.imagePath} alt={props.name} />
+      <img src={props.image} alt={props.name} />
     </a>
   );
 };

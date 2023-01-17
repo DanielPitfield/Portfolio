@@ -13,7 +13,7 @@ const Project = (props: ProjectProps) => {
   return (
     <article className={styles.wrapper}>
       <ProjectImage
-        imagePath={props.projectConfig.imagePath}
+        image={props.projectConfig.image}
         name={props.projectConfig.name}
         demoConfig={props.projectConfig.demoConfig}
       />
