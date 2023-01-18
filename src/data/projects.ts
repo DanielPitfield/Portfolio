@@ -66,7 +66,7 @@ export const Projects: ProjectConfig[] = [
     size: "large",
     description: "A web-based crime mapping, visualisation and analysis solution using the Google Maps JavaScript API",
     image: CrimeMapper,
-    skills: ["JavaScript", "jQuery", "PHP", "MySQL", "HTML", "Bootstrap"],
+    skills: ["JavaScript", "jQuery", "Google Cloud", "PHP", "MySQL", "HTML", "Bootstrap"],
     demoConfig: { isDemoEnabled: false, reason: "Hosting costs" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Crime_Mapper" },
   },
