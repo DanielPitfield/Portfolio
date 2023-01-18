@@ -16,7 +16,7 @@ const ProjectDemoButton = (props: ProjectDemoButtonProps) => {
       target="_blank"
       rel="noreferrer"
     >
-      <FaPlay /> Live Demo
+      <FaPlay className={styles.icon} /> Live Demo
     </a>
   );
 };

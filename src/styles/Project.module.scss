@@ -49,14 +49,20 @@
       display: flex;
       margin: 1em 0.5em;
 
+      .icon {
+        margin-right: 0.3em;
+      }
+
       .link {
+        display: flex;
+        align-items: center;
+        text-align: center;
         cursor: pointer;
         text-decoration: none;
         padding: 1em 1.5em;
         margin-right: 0.8em;
         background-color: inherit;
         letter-spacing: 0.1em;
-        text-align: center;
         text-transform: uppercase;
         white-space: nowrap;
         border-radius: 8px;
