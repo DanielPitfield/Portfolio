@@ -23,7 +23,7 @@ const ProjectImage = (props: ProjectImageProps) => {
   }
 
   return (
-    <a className={styles.imageLink} href={getLink()} target="_blank" rel="noreferrer">
+    <a className={styles.imageLink} tabIndex={-1} href={getLink()} target="_blank" rel="noreferrer">
       <img className={styles.image} src={props.image} alt={props.name} height={380} width={680} />
     </a>
   );

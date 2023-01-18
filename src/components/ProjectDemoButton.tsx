@@ -10,6 +10,7 @@ const ProjectDemoButton = (props: ProjectDemoButtonProps) => {
   return (
     <a
       className={styles.link}
+      tabIndex={0}
       data-is-disabled={!props.demoConfig.isDemoEnabled}
       title={!props.demoConfig.isDemoEnabled && props.demoConfig.reason ? props.demoConfig.reason : undefined}
       href={props.demoConfig.isDemoEnabled ? props.demoConfig.link : undefined}

@@ -10,6 +10,7 @@ const ProjectViewCodeButton = (props: ProjectViewCodeButtonProps) => {
   return (
     <a
       className={styles.link}
+      tabIndex={0}
       data-is-disabled={!props.viewCodeConfig.isViewCodeEnabled}
       title={
         !props.viewCodeConfig.isViewCodeEnabled && props.viewCodeConfig.reason ? props.viewCodeConfig.reason : undefined
