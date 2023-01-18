@@ -10,7 +10,7 @@ type SidebarItem = { name: string; link: string; icon: IconType };
 const items: SidebarItem[] = [
   { name: "Email", link: "mailto:danielpitfield1@gmail.com", icon: AiOutlineMail },
   { name: "GitHub", link: "https://github.com/DanielPitfield", icon: BsGithub },
-  { name: "CV", link: "/assets/CV.pdf", icon: GrDocument  },
+  { name: "CV", link: "/assets/CV.pdf", icon: GrDocument },
 ];
 
 const Sidebar = () => {
@@ -18,8 +18,10 @@ const Sidebar = () => {
     <ul className={styles.wrapper}>
       {items.map((item) => (
         <li key={item.name} className={styles.item}>
-          <item.icon className={styles.icon}/>
-          <a className={styles.link} href={item.link}>{item.name}</a>
+          <a className={styles.link} href={item.link}>
+            <item.icon className={styles.icon} />
+            {item.name}
+          </a>
         </li>
       ))}
     </ul>
