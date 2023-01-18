@@ -1,6 +1,7 @@
 import styles from "../styles/SkillsSection.module.scss";
 
-import Skill, { SkillName } from "./Skill";
+import Skill from "./Skill";
+import { SkillName } from "../data/skills";
 
 interface SkillsProps {
   size: "section" | "project";

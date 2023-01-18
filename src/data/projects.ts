@@ -1,4 +1,4 @@
-import { SkillName } from "../components/Skill";
+import { SkillName } from "./skills";
 
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
 
@@ -112,7 +112,7 @@ export const Projects: ProjectConfig[] = [
         skills: ["JavaScript", "jQuery", "Bootstrap"],
         demoConfig: { isDemoEnabled: false },
         viewCodeConfig: { isViewCodeEnabled: false },
-      }
+      },
     ],
   },
 ];
