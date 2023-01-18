@@ -5,7 +5,6 @@ import { MdEmail } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BsFileEarmarkTextFill } from "react-icons/bs";
 
-
 type SidebarItem = { name: string; link: string; icon: IconType };
 
 const items: SidebarItem[] = [
@@ -19,7 +18,7 @@ const Sidebar = () => {
     <ul className={styles.wrapper}>
       {items.map((item) => (
         <li key={item.name} className={styles.item}>
-          <a className={styles.link} href={item.link}>
+          <a className={styles.link} href={item.link} target="_blank" rel="noreferrer">
             <item.icon className={styles.icon} />
             {item.name}
           </a>
