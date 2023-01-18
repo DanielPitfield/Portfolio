@@ -50,15 +50,6 @@ export const Projects: ProjectConfig[] = [
         demoConfig: { isDemoEnabled: false },
         viewCodeConfig: { isViewCodeEnabled: false },
       },
-      {
-        name: "Brian Badonde Quotes",
-        size: "large",
-        description: "",
-        image: "",
-        skills: ["TypeScript", "React", "Next.js", "SAAS"],
-        demoConfig: { isDemoEnabled: false },
-        viewCodeConfig: { isViewCodeEnabled: false },
-      },
     ],
   },
   {
