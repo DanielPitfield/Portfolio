@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -14,8 +16,10 @@
 
 .list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5em;
+  @media ($mobile) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em;
+  }
 }
