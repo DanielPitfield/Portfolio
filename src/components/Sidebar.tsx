@@ -1,16 +1,17 @@
 import styles from "../styles/Sidebar.module.scss";
 
-import { AiOutlineMail } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
-import { GrDocument } from "react-icons/gr";
 import { IconType } from "react-icons/lib";
+import { MdEmail } from "react-icons/md";
+import { BsGithub } from "react-icons/bs";
+import { BsFileEarmarkTextFill } from "react-icons/bs";
+
 
 type SidebarItem = { name: string; link: string; icon: IconType };
 
 const items: SidebarItem[] = [
-  { name: "Email", link: "mailto:danielpitfield1@gmail.com", icon: AiOutlineMail },
+  { name: "Email", link: "mailto:danielpitfield1@gmail.com", icon: MdEmail },
   { name: "GitHub", link: "https://github.com/DanielPitfield", icon: BsGithub },
-  { name: "CV", link: "/assets/CV.pdf", icon: GrDocument },
+  { name: "CV", link: "/assets/CV.pdf", icon: BsFileEarmarkTextFill },
 ];
 
 const Sidebar = () => {
