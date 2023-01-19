@@ -73,10 +73,10 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Advent of Code",
     size: "small",
-    description: "Solutions to Advent of Code 2022",
+    description: "Solutions to Advent of Code 2022 (an advent calendar of programming puzzles)",
     image: "",
     skills: ["TypeScript"],
-    demoConfig: { isDemoEnabled: false, reason: "Run with npm package runner (npx ts-node script.ts)" },
+    demoConfig: { isDemoEnabled: false, reason: "Run a solution file with ts-node and the npm package runner using the command:\nnpx ts-node script.ts" },
     viewCodeConfig: {
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/advent-of-code-2022",
