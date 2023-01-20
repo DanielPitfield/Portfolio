@@ -6,11 +6,10 @@ interface ProjectTitleProps {
   projectConfig: ProjectConfig;
   selectedVariant: ProjectConfig;
   setSelectedVariant: (selectedVariant: ProjectConfig) => void;
-  additionalVariants: ProjectConfig[] | undefined;
 }
 
 const ProjectTitle = (props: ProjectTitleProps) => {
-  if (!props.additionalVariants) {
+  if (!props.projectConfig.additionalVariants) {
     return <h3 className={styles.title}>{props.selectedVariant.name}</h3>;
   }
 
@@ -21,14 +20,14 @@ const ProjectTitle = (props: ProjectTitleProps) => {
         value={props.selectedVariant.name}
         onChange={(e) =>
           props.setSelectedVariant(
-            props.additionalVariants?.find(
+            props.projectConfig.additionalVariants?.find(
               (additionalVariant) => additionalVariant.name === e.target.selectedOptions[0].value
             ) ?? props.projectConfig
           )
         }
       >
         <option value={props.projectConfig.name}>{props.projectConfig.name}</option>
-        {props.additionalVariants?.map((additionalVariant) => (
+        {props.projectConfig.additionalVariants.map((additionalVariant) => (
           <option key={additionalVariant.name} value={additionalVariant.name}>
             {additionalVariant.name}
           </option>

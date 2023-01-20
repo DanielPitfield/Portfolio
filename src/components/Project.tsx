@@ -23,7 +23,6 @@ const Project = (props: ProjectProps) => {
           projectConfig={props.projectConfig}
           selectedVariant={selectedVariant}
           setSelectedVariant={setSelectedVariant}
-          additionalVariants={props.projectConfig.additionalVariants}
         />
 
         <Skills size="project" skills={selectedVariant.skills} />
