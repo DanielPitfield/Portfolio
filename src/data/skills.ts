@@ -7,7 +7,7 @@ import tRPC from "/Images/Skills/trpc.svg";
 import PHP from "/Images/Skills/php.svg";
 import MySQL from "/Images/Skills/mysql.svg";
 import HTML from "/Images/Skills/html.svg";
-import SAAS from "/Images/Skills/saas.svg";
+import SASS from "/Images/Skills/sass.svg";
 import Tailwind from "/Images/Skills/tailwind.svg";
 import Bootstrap from "/Images/Skills/bootstrap.svg";
 import CSS from "/Images/Skills/css.svg";
@@ -28,7 +28,7 @@ export const SkillMappings = [
   { name: "PHP", icon: PHP, isDisplayed: false },
   { name: "MySQL", icon: MySQL, isDisplayed: false },
   { name: "HTML", icon: HTML, isDisplayed: true },
-  { name: "SAAS", icon: SAAS, isDisplayed: true },
+  { name: "SASS", icon: SASS, isDisplayed: true },
   { name: "Tailwind", icon: Tailwind, isDisplayed: false },
   { name: "Bootstrap", icon: Bootstrap, isDisplayed: false },
   { name: "CSS", icon: CSS, isDisplayed: true },
