@@ -5,6 +5,7 @@ import CrimeMapper from "/Images/Projects/crimeMapper.png";
 export type ProjectConfig = {
   name: string;
   size: "small" | "large";
+  status?: "In Development" | "Deprecated";
   description: string;
   image: string;
   skills: SkillName[];
@@ -27,6 +28,7 @@ export const Projects: ProjectConfig[] = [
   {
     name: "F1 Dashboard",
     size: "large",
+    status: "In Development",
     description: "",
     image: "",
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
@@ -109,6 +111,7 @@ export const Projects: ProjectConfig[] = [
       {
         name: "Noughts and Crosses (old)",
         size: "small",
+        status: "Deprecated",
         description:
           "Play against an AI opponent that evaluates moves using the Minimax algorithm or as two human players",
         image: "",

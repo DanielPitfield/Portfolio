@@ -10,30 +10,48 @@ interface ProjectTitleProps {
 
 const ProjectTitle = (props: ProjectTitleProps) => {
   if (!props.projectConfig.additionalVariants) {
-    return <h3 className={styles.title}>{props.selectedVariant.name}</h3>;
+    return (
+      <div className={styles.titleWrapper}>
+        <h3 className={styles.title}>{props.selectedVariant.name}</h3>
+
+        {props.projectConfig.status && (
+          <div className={styles.status} data-status={props.projectConfig.status}>
+            {props.projectConfig.status}
+          </div>
+        )}
+      </div>
+    );
   }
 
   return (
-    <h3 className={styles.title}>
-      <select
-        className={styles.additionalVariantsDropdown}
-        value={props.selectedVariant.name}
-        onChange={(e) =>
-          props.setSelectedVariant(
-            props.projectConfig.additionalVariants?.find(
-              (additionalVariant) => additionalVariant.name === e.target.selectedOptions[0].value
-            ) ?? props.projectConfig
-          )
-        }
-      >
-        <option value={props.projectConfig.name}>{props.projectConfig.name}</option>
-        {props.projectConfig.additionalVariants.map((additionalVariant) => (
-          <option key={additionalVariant.name} value={additionalVariant.name}>
-            {additionalVariant.name}
-          </option>
-        ))}
-      </select>
-    </h3>
+    <div className={styles.titleWrapper}>
+      <h3 className={styles.title}>
+        <select
+          className={styles.additionalVariantsDropdown}
+          value={props.selectedVariant.name}
+          onChange={(e) =>
+            props.setSelectedVariant(
+              props.projectConfig.additionalVariants?.find(
+                (additionalVariant) => additionalVariant.name === e.target.selectedOptions[0].value
+              ) ?? props.projectConfig
+            )
+          }
+        >
+          <option value={props.projectConfig.name}>{props.projectConfig.name}</option>
+          {props.projectConfig.additionalVariants.map((additionalVariant) => (
+            <option key={additionalVariant.name} value={additionalVariant.name}>
+              {additionalVariant.name}
+            </option>
+          ))}
+        </select>
+      </h3>
+
+      {props.projectConfig.status && (
+        <div className={styles.status} data-status={props.projectConfig.status}>
+          {props.projectConfig.status}
+        </div>
+      )}
+    </div>
   );
 };
 
