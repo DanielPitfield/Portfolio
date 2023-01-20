@@ -67,8 +67,8 @@ export const Projects: ProjectConfig[] = [
     description: "Chrome extension to replace the cartoony images on Duolingo with Becky G!",
     image: "",
     skills: ["TypeScript", "React", "CSS"],
-    demoConfig: { isDemoEnabled: false },
-    viewCodeConfig: { isViewCodeEnabled: false },
+    demoConfig: { isDemoEnabled: false, reason: "Clone the project and create a production build using the command:\nnpm run build\nNavigate to Chrome extensions and select the 'dist' output folder using the 'Load Unpacked' option" },
+    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Becky-G-Duolingo" },
   },
   {
     name: "Advent of Code",
