@@ -35,20 +35,23 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Gibbs Rules",
     size: "large",
-    description: "",
+    description: "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS)",
     image: "",
     skills: ["TypeScript", "React", "Next.js", "SASS"],
     demoConfig: { isDemoEnabled: false },
-    viewCodeConfig: { isViewCodeEnabled: false },
+    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Gibbs-Rules" },
     additionalVariants: [
       {
         name: "F1 Quotes",
         size: "large",
-        description: "",
+        description: "Daily quotes from the people of F1",
         image: "",
         skills: ["TypeScript", "React", "Next.js", "SASS"],
         demoConfig: { isDemoEnabled: false },
-        viewCodeConfig: { isViewCodeEnabled: false },
+        viewCodeConfig: {
+          isViewCodeEnabled: true,
+          link: "https://github.com/DanielPitfield/Gibbs-Rules/blob/main/app/%5B%5B...quoteContext%5D%5D/page.tsx",
+        },
       },
     ],
   },
@@ -67,7 +70,11 @@ export const Projects: ProjectConfig[] = [
     description: "Chrome extension to replace the cartoony images on Duolingo with Becky G!",
     image: "",
     skills: ["TypeScript", "React", "CSS"],
-    demoConfig: { isDemoEnabled: false, reason: "Clone the project and create a production build using the command:\nnpm run build\nNavigate to Chrome extensions and select the 'dist' output folder using the 'Load Unpacked' option" },
+    demoConfig: {
+      isDemoEnabled: false,
+      reason:
+        "Clone the project and create a production build using the command:\nnpm run build\nNavigate to Chrome extensions and select the 'dist' output folder using the 'Load Unpacked' option",
+    },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Becky-G-Duolingo" },
   },
   {
