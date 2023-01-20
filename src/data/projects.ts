@@ -66,7 +66,7 @@ export const Projects: ProjectConfig[] = [
     size: "small",
     description: "Chrome extension to replace the cartoony images on Duolingo with Becky G!",
     image: "",
-    skills: ["TypeScript", "JavaScript", "React", "CSS"],
+    skills: ["TypeScript", "React", "CSS"],
     demoConfig: { isDemoEnabled: false },
     viewCodeConfig: { isViewCodeEnabled: false },
   },
