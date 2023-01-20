@@ -76,7 +76,10 @@ export const Projects: ProjectConfig[] = [
     description: "Solutions to Advent of Code 2022 (an advent calendar of programming puzzles)",
     image: "",
     skills: ["TypeScript"],
-    demoConfig: { isDemoEnabled: false, reason: "Run a solution file with ts-node and the npm package runner using the command:\nnpx ts-node script.ts" },
+    demoConfig: {
+      isDemoEnabled: false,
+      reason: "Run a solution file with ts-node and the npm package runner using the command:\nnpx ts-node script.ts",
+    },
     viewCodeConfig: {
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/advent-of-code-2022",
@@ -86,7 +89,7 @@ export const Projects: ProjectConfig[] = [
     name: "Noughts and Crosses",
     size: "small",
     description:
-      "Play against an AI opponent (which uses the unbeatable Minimax algortihm on the highest difficulty) or as two human players",
+      "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players",
     image: "",
     skills: ["TypeScript", "React", "Tailwind"],
     demoConfig: { isDemoEnabled: false },
@@ -98,11 +101,12 @@ export const Projects: ProjectConfig[] = [
       {
         name: "Noughts and Crosses (old)",
         size: "small",
-        description: "",
+        description:
+          "Play against an AI opponent that evaluates moves using the Minimax algorithm or as two human players",
         image: "",
-        skills: ["JavaScript", "jQuery", "Bootstrap"],
+        skills: ["JavaScript", "jQuery", "HTML", "Bootstrap"],
         demoConfig: { isDemoEnabled: false },
-        viewCodeConfig: { isViewCodeEnabled: false },
+        viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Noughts_and_Crosses" },
       },
     ],
   },
