@@ -17,11 +17,12 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Wingo",
     size: "large",
-    description: "A game based on Wordle but with more content (numerous game modes) and better replayability",
+    description:
+      "A game based on Wordle but with more content (22+ unique game modes), better replayability, configurable gamemode settings and a dedicated campaign!",
     image: "",
     skills: ["TypeScript", "React", "SASS"],
     demoConfig: { isDemoEnabled: false },
-    viewCodeConfig: { isViewCodeEnabled: false },
+    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Wingo" },
   },
   {
     name: "F1 Dashboard",
