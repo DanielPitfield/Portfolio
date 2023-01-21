@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,600;1,300&display=swap');
-@import "./variables.scss";
 
 :root {
   font-family: "Kanit", sans-serif;
@@ -29,12 +28,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-size: 17px;
-}
-
-body {  
-  @media ($mobile) {
-    padding: 0.8em;
-  }
 }
 
 h1 {
