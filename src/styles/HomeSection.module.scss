@@ -30,11 +30,6 @@
     justify-content: center;
     text-align: center;
     line-height: 1.2em;
-    
-    @media ($mobile) {
-      font-size: 2rem;
-      margin: 0.2em;
-    }
   }
 
   .link {
@@ -52,9 +47,7 @@
     @media ($mobile) {
       flex-grow: 1;
       margin: 0.3em;
-      padding: 0.9em 0.4em;
-      align-self: stretch;
-      font-size: 1.4rem;
+      padding: 1em 2.5em;
     }
 
     &:hover {
