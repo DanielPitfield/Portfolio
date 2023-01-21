@@ -6,10 +6,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   @media ($desktop) {
     position: absolute;
     left: 0;
     top: 40vh;
+  }
+
+  @media ($mobile) {
+    flex-grow: 1;
+    align-self: normal;
+    margin: 0.3em;
   }
 
   .item {
@@ -21,6 +28,10 @@
     margin: 0;
     padding: 0;
 
+    @media ($mobile) {
+      text-align: center;
+    }
+
     .link {
       display: flex;
       width: 100%;
@@ -30,6 +41,12 @@
       margin: 0;
       font-size: 1.5em;
       font-weight: 400;
+
+      @media ($mobile) {
+        display: flex;
+        justify-content: center;
+        margin: 0.2em;
+      }
 
       &:hover {
         cursor: pointer;
