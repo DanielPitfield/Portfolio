@@ -7,23 +7,22 @@ Personal website to showcase projects
 
 ## Usage / Instructions
 ### Home
-- Provided links to email, GitHub profile and CV
-- 'Call to action' button to navigate to 'Projects' section
+* Provided links to email, GitHub profile and CV
+* 'Call to action' button to navigate to 'Projects' section
 
 ### Skills
-- List of established skills using icons and labels
-- There may be other skills/technologies used for individual projects but which however do not warrant being shown in this section
-- Inferred skills (such as TypeScript/JavaScript and SAAS/CSS) included only for individuals that may be non-technical
-- Similarly with softer skills (such as npm, Git and Visual Studio Code)
+* List of established skills using icons and labels
+* There may be other skills/technologies used for individual projects but which however do not warrant being shown in this section
+* Inferred skills (such as TypeScript/JavaScript and SAAS/CSS) included only for individuals that may be non-technical
+* Similarly with softer skills (such as npm, Git and Visual Studio Code)
 
 ### Projects
-- **Projects where the title is a dropdown can have variants**, these are similar versions of the project that may have different content or that are built with different technologies
-- The technologies used to implement each project are listed with icons below the project title (tooltip texts of the names of the technologies are provided due to the absence of labels)
-- Projects have an optional status (an example being to indicate which projects are currently under development)
-- Each project has two buttons, the first labelled **'Live Demo'** being to a live link to a deployment of the project and the other labelled **'View Code'** being a link to the repository (source code)
-- **If these buttons are disabled, tooltip text may explain the reason or provide additional information**
+* **Projects where the title is a dropdown can have variants**, these are similar versions of the project that may have different content or that are built with different technologies
+* The technologies used to implement each project are listed with icons below the project title (tooltip texts of the names of the technologies are provided due to the absence of labels)
+* Projects have an optional status (an example being to indicate which projects are currently under development)
+* Each project has two buttons, the first labelled **'Live Demo'** being to a live link to a deployment of the project and the other labelled **'View Code'** being a link to the repository (source code)
+* **If these buttons are disabled, tooltip text may explain the reason or provide additional information**
 
-Projects also each have their own size (either small or large) with the projects included in this portfolio being the following:
 #### Large Projects
 * Wingo
 * F1 Dashboard
