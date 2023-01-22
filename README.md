@@ -1,20 +1,36 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Portfolio
+Personal website to showcase projects
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Usage / Instructions
+### Home
+- Provided links to email, GitHub profile and CV
+- 'Call to action' button to navigate to 'Projects' section
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+### Skills
+- List of established skills using icons and labels
+- There may be other skills/technologies used for individual projects but which however do not warrant being shown in this section
+- Inferred skills (such as TypeScript/JavaScript and SAAS/CSS) included only for individuals that may be non-technical
+- Similarly with softer skills (such as npm, Git and Visual Studio Code)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+### Projects
+- **Projects where the title is a dropdown can have variants**, these are similar versions of the project that may have different content or that are built with different technologies
+- The technologies used to implement each project are listed with icons below the project title (tooltip texts of the names of the technologies are provided due to the absence of labels)
+- Projects have an optional status (an example being to indicate which projects are currently under development)
+- Each project has two buttons, the first labelled **'Live Demo'** being to a live link to a deployment of the project and the other labelled **'View Code'** being a link to the repository (source code)
+- **If these buttons are disabled, tooltip text may explain the reason or provide additional information**
+
+Projects also each have their own size (either small or large) with the projects included in this portfolio being the following:
+#### Large Projects
+* Wingo
+* F1 Dashboard
+* Gibbs Rules
+* Crime Mapper
+
+#### Small Projects
+* Advent of Code
+* Becky G Duolingo
+* Noughts and Crosses
