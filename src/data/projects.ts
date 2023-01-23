@@ -22,7 +22,7 @@ export const Projects: ProjectConfig[] = [
       "A game based on Wordle but with more content (22+ unique game modes), better replayability, configurable gamemode settings and a dedicated campaign!",
     image: "",
     skills: ["TypeScript", "React", "SASS"],
-    demoConfig: { isDemoEnabled: false },
+    demoConfig: { isDemoEnabled: true, link: "https://wingo-danielpitfield.vercel.app/" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Wingo" },
   },
   {
