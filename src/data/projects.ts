@@ -9,8 +9,8 @@ export type ProjectConfig = {
   description: string;
   image: string;
   skills: SkillName[];
-  demoConfig: { isDemoEnabled: false; reason?: string } | { isDemoEnabled: true; link: string };
-  viewCodeConfig: { isViewCodeEnabled: false; reason?: string } | { isViewCodeEnabled: true; link: string };
+  demoConfig: { isDemoEnabled: false; reason: string } | { isDemoEnabled: true; link: string };
+  viewCodeConfig: { isViewCodeEnabled: false; reason: string } | { isViewCodeEnabled: true; link: string };
   additionalVariants?: ProjectConfig[];
 };
 
