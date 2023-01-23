@@ -41,7 +41,7 @@ export const Projects: ProjectConfig[] = [
     description: "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS)",
     image: "",
     skills: ["TypeScript", "React", "Next.js", "SASS"],
-    demoConfig: { isDemoEnabled: false },
+    demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Gibbs-Rules" },
     additionalVariants: [
       {
@@ -50,7 +50,7 @@ export const Projects: ProjectConfig[] = [
         description: "Daily quotes from the people of F1",
         image: "",
         skills: ["TypeScript", "React", "Next.js", "SASS"],
-        demoConfig: { isDemoEnabled: false },
+        demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app/?=F1" },
         viewCodeConfig: {
           isViewCodeEnabled: true,
           link: "https://github.com/DanielPitfield/Gibbs-Rules/blob/main/app/%5B%5B...quoteContext%5D%5D/page.tsx",
