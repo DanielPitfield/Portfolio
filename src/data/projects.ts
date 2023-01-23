@@ -116,7 +116,7 @@ export const Projects: ProjectConfig[] = [
           "Play against an AI opponent that evaluates moves using the Minimax algorithm or as two human players",
         image: "",
         skills: ["JavaScript", "jQuery", "HTML", "Bootstrap"],
-        demoConfig: { isDemoEnabled: false },
+        demoConfig: { isDemoEnabled: true, link: "https://danielpitfield.github.io/Noughts-and-Crosses/" },
         viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Noughts_and_Crosses" },
       },
     ],
