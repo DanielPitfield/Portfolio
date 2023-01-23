@@ -102,7 +102,7 @@ export const Projects: ProjectConfig[] = [
       "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players",
     image: "",
     skills: ["TypeScript", "React", "Tailwind"],
-    demoConfig: { isDemoEnabled: false },
+    demoConfig: { isDemoEnabled: true, link: "https://noughts-and-crosses-react.vercel.app/" },
     viewCodeConfig: {
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/noughts-and-crosses-react",
