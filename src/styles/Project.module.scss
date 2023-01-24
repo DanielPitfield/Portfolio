@@ -16,6 +16,9 @@
   @media ($desktop) {
     min-height: 28em;
   }
+  &[data-size="small"] {
+    padding: 0 1.5em;
+  }
 
   .info {
     display: flex;
