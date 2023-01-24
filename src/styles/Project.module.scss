@@ -5,19 +5,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5em;
   margin: 1.5em;
   background-color: #353849;
   border-radius: 6px;
   @media ($mobile) {
     flex-direction: column;
     flex-grow: 1;
+    padding: 1em;
   }
   @media ($desktop) {
     min-height: 28em;
-  }
-  &[data-size="small"] {
-    padding: 0 1.5em;
+    padding: 1.5em;
+    &[data-size="small"] {
+      padding: 0 1.5em;
+    }
   }
 
   .info {
@@ -45,6 +46,9 @@
           font-family: inherit;
           font-weight: inherit;
           border: 1px solid #aaa5;
+          @media ($mobile) {
+            max-width: calc(100vw - 4em);
+          }
 
           option {
             background-color: #333;

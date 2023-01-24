@@ -9,7 +9,10 @@
 
   .title {
     display: flex;
-    margin: 1em;
+    margin-bottom: 1em;
+    @media ($mobile) {
+      margin-bottom: 0.5em;
+    }
   }
 
   .list {
@@ -17,6 +20,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    @media ($mobile) {
+      margin: 0 1em;
+    }
     @media ($desktop) {
       & > [data-size="large"] {
         flex-basis: calc(50% - 10em);
