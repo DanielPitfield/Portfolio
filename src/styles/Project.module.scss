@@ -35,7 +35,7 @@
         margin: 0.5rem;
 
         .additionalVariantsDropdown {
-          padding: 0.1em 0.3em;
+          padding: 0 0.2em;
           background-color: inherit;
           font-size: inherit;
           color: inherit;
@@ -76,6 +76,8 @@
       font-size: 1.2em;
       margin: 0.5rem;
       flex-grow: 1;
+      align-items: center;
+      min-height: 6em;
     }
 
     .links {
