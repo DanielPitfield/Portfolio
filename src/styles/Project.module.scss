@@ -1,6 +1,7 @@
 @import "./variables.scss";
 
 .wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,12 +52,14 @@
       }
 
       .status {
+        position: absolute;
+        top: 0;
+        left: 0;
         display: flex;
         align-items: center;
         font-size: 1.1em;
-        padding: 0.35em 1.2em;
-        margin: 1rem;
-        border-radius: 15px;
+        padding: 0.45em 1.3em;
+        border-radius: 5px;
 
         &[data-status="In Development"] {
           background-color: #e4ae4a;
@@ -111,11 +114,16 @@
     }
   }
 
-  .imageLink {
-    margin: 1em;
+  .imageWrapper {
+    display: flex;
+    flex-grow: 1;
+    .imageLink {
+      margin: 1em;
 
-    .image {
-      border-radius: 6px;
+      .image {
+        border-radius: 6px;
+        width: 100%;
+      }
     }
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5em;
+  margin: 0.3em;
   font-size: 1.2em;
 
   &[data-size="large"] {
@@ -14,9 +14,9 @@
     display: flex;
 
     &[data-size="small"] {
-      width: 50px;
-      height: 50px;
-      border-radius: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
     }
 
     &[data-size="large"] {
