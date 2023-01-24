@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     @media ($desktop) {
       & > [data-size="large"] {
-        flex-basis: calc(50% - 10em);
+        flex-basis: calc(50% - 8em);
       }
       & > [data-size="small"] {
         flex-basis: calc(33% - 8em);
