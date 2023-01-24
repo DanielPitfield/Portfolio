@@ -1,9 +1,16 @@
+@import "./variables.scss";
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
+  @media ($mobile) {
+    margin-top: 2em;
+  }
+  @media ($desktop) {    
+    justify-content: center;
+  }
 
   .title {
     display: flex;
@@ -21,6 +28,7 @@
     margin: 0.1em;
     font-size: 3em;
     justify-content: center;
+    text-align: center;
   }
 
   .link {
