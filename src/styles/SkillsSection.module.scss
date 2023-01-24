@@ -21,4 +21,7 @@
     justify-content: center;
     margin: 0.5em;
   }
+  @media ($desktop) {
+    margin: 0.1rem 0.2rem;
+  }
 }
