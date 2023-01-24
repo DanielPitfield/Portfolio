@@ -18,8 +18,10 @@
   @media ($mobile) {
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     margin: 0.5em;
+    &[data-size="section"] {
+      justify-content: center;
+    }
   }
   @media ($desktop) {
     margin: 0.1rem 0.2rem;

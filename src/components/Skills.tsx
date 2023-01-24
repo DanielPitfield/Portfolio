@@ -15,7 +15,7 @@ const Skills = (props: SkillsProps) => {
       <section className={styles.wrapper} id="skills">
         <h1 className={styles.title}>Skills</h1>
 
-        <div className={styles.list}>
+        <div className={styles.list} data-size={props.size}>
           {props.skills.map((skill) => (
             <Skill key={skill} size="large" skill={skill} showLabel />
           ))}
@@ -26,7 +26,7 @@ const Skills = (props: SkillsProps) => {
 
   // Display the provided skills with smaller icons and without labels
   return (
-    <div className={styles.list}>
+    <div className={styles.list} data-size={props.size}>
       {props.skills.map((skill) => (
         <Skill key={skill} size="small" skill={skill} showLabel={false} />
       ))}
