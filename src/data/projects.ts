@@ -1,5 +1,6 @@
 import { SkillName } from "./skills";
 
+import Wingo from "/Images/Projects/wingo.png";
 import GibbsRules from "/Images/Projects/gibbsRules.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
 
@@ -21,7 +22,7 @@ export const Projects: ProjectConfig[] = [
     size: "large",
     description:
       "A game based on Wordle but with more content (22+ unique game modes), better replayability, configurable gamemode settings and a dedicated campaign!",
-    image: "",
+    image: Wingo,
     skills: ["TypeScript", "React", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://wingo-danielpitfield.vercel.app/" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Wingo" },
