@@ -39,7 +39,7 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Gibbs Rules",
     size: "large",
-    description: "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS)",
+    description: "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS). Who said Gibbs' rules aren't written down anywhere?",
     image: "",
     skills: ["TypeScript", "React", "Next.js", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app" },
@@ -48,7 +48,7 @@ export const Projects: ProjectConfig[] = [
       {
         name: "F1 Quotes",
         size: "large",
-        description: "Daily quotes from the people of F1",
+        description: "Daily quotes from the people of Formula One including Martin Brundle grid walk drama, iconic Crofty commentary and more!",
         image: "",
         skills: ["TypeScript", "React", "Next.js", "SASS"],
         demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app/?=F1" },
