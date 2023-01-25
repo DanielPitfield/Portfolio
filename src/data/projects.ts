@@ -86,7 +86,7 @@ export const Projects: ProjectConfig[] = [
     name: "Advent of Code",
     size: "small",
     description:
-      "Solutions to an advent calendar of programming puzzles! Top 3% completion time for Days 2, 6 and 10!",
+      "Solutions to an advent calendar of programming puzzles! Top 3% time for Day 2, Day 6 and Day 10!",
     image: "",
     skills: ["TypeScript"],
     demoConfig: {
