@@ -14,9 +14,9 @@ const ProjectTitle = (props: ProjectTitleProps) => {
       <div className={styles.titleWrapper}>
         <h3 className={styles.title}>{props.selectedVariant.name}</h3>
 
-        {props.projectConfig.status && (
-          <div className={styles.status} data-status={props.projectConfig.status}>
-            {props.projectConfig.status}
+        {props.selectedVariant.status && (
+          <div className={styles.status} data-status={props.selectedVariant.status}>
+            {props.selectedVariant.status}
           </div>
         )}
       </div>
@@ -46,9 +46,9 @@ const ProjectTitle = (props: ProjectTitleProps) => {
         </select>
       </h3>
 
-      {props.projectConfig.status && (
-        <div className={styles.status} data-status={props.projectConfig.status}>
-          {props.projectConfig.status}
+      {props.selectedVariant.status && (
+        <div className={styles.status} data-status={props.selectedVariant.status}>
+          {props.selectedVariant.status}
         </div>
       )}
     </div>
