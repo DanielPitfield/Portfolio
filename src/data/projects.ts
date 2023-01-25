@@ -1,5 +1,6 @@
 import { SkillName } from "./skills";
 
+import GibbsRules from "/Images/Projects/gibbsRules.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
 
 export type ProjectConfig = {
@@ -41,7 +42,7 @@ export const Projects: ProjectConfig[] = [
     size: "large",
     description:
       "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS). Who said Gibbs' rules aren't written down anywhere?",
-    image: "",
+    image: GibbsRules,
     skills: ["TypeScript", "React", "Next.js", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Gibbs-Rules" },
