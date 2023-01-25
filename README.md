@@ -5,6 +5,8 @@ Personal website to showcase projects
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
+![Portfolio](https://raw.githubusercontent.com/DanielPitfield/danielpitfield.github.io/main/public/Images/Projects/largeSection.png)
+
 ## Usage / Instructions
 ### Home
 * Provided links to email, GitHub profile and CV
