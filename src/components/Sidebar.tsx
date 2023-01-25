@@ -10,7 +10,7 @@ type SidebarItem = { name: string; link: string; icon: IconType };
 const items: SidebarItem[] = [
   { name: "Email", link: "mailto:danielpitfield1@gmail.com", icon: MdEmail },
   { name: "GitHub", link: "https://github.com/DanielPitfield", icon: BsGithub },
-  { name: "CV", link: "/assets/CV.pdf", icon: BsFileEarmarkTextFill },
+  { name: "CV", link: "/Daniel Pitfield - Software Engineer.pdf", icon: BsFileEarmarkTextFill },
 ];
 
 const Sidebar = () => {
