@@ -30,7 +30,7 @@ export const Projects: ProjectConfig[] = [
     size: "large",
     status: "In Development",
     description:
-      "A website for everything Formula One including a schedule (with a countdown to the next Grand Prix weekend session) and statistics for the current drivers, teams and more!",
+      "A website for everything Formula One including a countdown to the next Grand Prix weekend session and statistics for the current drivers, teams and more!",
     image: "",
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://f1-dashboard-danielpitfield.vercel.app/" },
@@ -48,7 +48,7 @@ export const Projects: ProjectConfig[] = [
       {
         name: "F1 Quotes",
         size: "large",
-        description: "Daily quotes from the people of Formula One including Martin Brundle grid walk drama, iconic Crofty commentary and more!",
+        description: "Daily quotes from the people of Formula One including Martin Brundle grid walk drama, iconic Crofty commentary and the legendary late Murray Walker!",
         image: "",
         skills: ["TypeScript", "React", "Next.js", "SASS"],
         demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app/?=F1" },
@@ -86,7 +86,7 @@ export const Projects: ProjectConfig[] = [
     name: "Advent of Code",
     size: "small",
     description:
-      "Solutions to an advent calendar of programming puzzles! Top 3% completion time for Day 2, Day 6 and Day 10!",
+      "Solutions to an advent calendar of programming puzzles! Top 3% completion time for Days 2, 6 and 10!",
     image: "",
     skills: ["TypeScript"],
     demoConfig: {
@@ -102,7 +102,7 @@ export const Projects: ProjectConfig[] = [
     name: "Noughts and Crosses",
     size: "small",
     description:
-      "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players",
+      "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players!",
     image: "",
     skills: ["TypeScript", "React", "Tailwind"],
     demoConfig: { isDemoEnabled: true, link: "https://noughts-and-crosses-react.vercel.app/" },
@@ -116,7 +116,7 @@ export const Projects: ProjectConfig[] = [
         size: "small",
         status: "Deprecated",
         description:
-          "Play against an AI opponent that evaluates moves using the unbeatable Minimax algorithm or as two human players",
+          "Play against an AI opponent that evaluates moves using the unbeatable Minimax algorithm or as two human players!",
         image: "",
         skills: ["JavaScript", "jQuery", "HTML", "Bootstrap"],
         demoConfig: { isDemoEnabled: true, link: "https://danielpitfield.github.io/Noughts-and-Crosses/" },
