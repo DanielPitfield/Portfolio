@@ -5,6 +5,7 @@ import F1Dashboard from "/Images/Projects/f1Dashboard.png";
 import GibbsRules from "/Images/Projects/gibbsRules.png";
 import F1Quotes from "/Images/Projects/f1Quotes.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
+import AdventOfCode from "/Images/Projects/adventOfCode.png";
 
 export type ProjectConfig = {
   name: string;
@@ -91,7 +92,7 @@ export const Projects: ProjectConfig[] = [
     name: "Advent of Code",
     size: "small",
     description: "Solutions to an advent calendar of programming puzzles! Top 3% time for Day 2, Day 6 and Day 10!",
-    image: "",
+    image: AdventOfCode,
     skills: ["TypeScript"],
     demoConfig: {
       isDemoEnabled: false,
