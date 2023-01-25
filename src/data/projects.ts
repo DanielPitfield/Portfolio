@@ -1,10 +1,12 @@
 import { SkillName } from "./skills";
 
+// Project images
 import Wingo from "/Images/Projects/wingo.png";
 import F1Dashboard from "/Images/Projects/f1Dashboard.png";
 import GibbsRules from "/Images/Projects/gibbsRules.png";
 import F1Quotes from "/Images/Projects/f1Quotes.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
+import BeckyGDuolingo from "/Images/Projects/beckyGDuolingo.png";
 import AdventOfCode from "/Images/Projects/adventOfCode.png";
 import NoughtsAndCrossesNew from "/Images/Projects/noughtsAndCrossesNew.png";
 import NoughtsAndCrossesOld from "/Images/Projects/noughtsAndCrossesOld.png";
@@ -81,7 +83,7 @@ export const Projects: ProjectConfig[] = [
     name: "Becky G Duolingo",
     size: "small",
     description: "Chrome extension to replace the images on Duolingo with Becky G! ¿Quieres aprender español con ella?",
-    image: "",
+    image: BeckyGDuolingo,
     skills: ["TypeScript", "React", "CSS"],
     demoConfig: {
       isDemoEnabled: false,
