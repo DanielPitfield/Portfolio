@@ -3,6 +3,7 @@ import { SkillName } from "./skills";
 import Wingo from "/Images/Projects/wingo.png";
 import F1Dashboard from "/Images/Projects/f1Dashboard.png";
 import GibbsRules from "/Images/Projects/gibbsRules.png";
+import F1Quotes from "/Images/Projects/f1Quotes.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
 
 export type ProjectConfig = {
@@ -54,7 +55,7 @@ export const Projects: ProjectConfig[] = [
         size: "large",
         description:
           "Daily quotes from the people of Formula One including Martin Brundle grid walk drama, iconic Crofty commentary and the legendary late Murray Walker!",
-        image: "",
+        image: F1Quotes,
         skills: ["TypeScript", "React", "Next.js", "SASS"],
         demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app/?=F1" },
         viewCodeConfig: {
