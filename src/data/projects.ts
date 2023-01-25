@@ -29,7 +29,8 @@ export const Projects: ProjectConfig[] = [
     name: "F1 Dashboard",
     size: "large",
     status: "In Development",
-    description: "Website displaying F1 statistics, schedule and information",
+    description:
+      "A website for everything Formula One including a schedule (with a countdown to the next Grand Prix weekend session) and statistics for the current drivers, teams and more!",
     image: "",
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://f1-dashboard-danielpitfield.vercel.app/" },
@@ -70,7 +71,8 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Becky G Duolingo",
     size: "small",
-    description: "Chrome extension to replace the cartoony images on Duolingo with Becky G!",
+    description:
+      "Chrome extension to replace the images on Duolingo with Becky G! ¿Quieres aprender español con ella?",
     image: "",
     skills: ["TypeScript", "React", "CSS"],
     demoConfig: {
@@ -83,7 +85,8 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Advent of Code",
     size: "small",
-    description: "Solutions to Advent of Code 2022 (an advent calendar of programming puzzles)",
+    description:
+      "Solutions to an advent calendar of programming puzzles! Top 3% completion time for Day 2, Day 6 and Day 10!",
     image: "",
     skills: ["TypeScript"],
     demoConfig: {
@@ -109,11 +112,11 @@ export const Projects: ProjectConfig[] = [
     },
     additionalVariants: [
       {
-        name: "Noughts and Crosses (old)",
+        name: "Older version",
         size: "small",
         status: "Deprecated",
         description:
-          "Play against an AI opponent that evaluates moves using the Minimax algorithm or as two human players",
+          "Play against an AI opponent that evaluates moves using the unbeatable Minimax algorithm or as two human players",
         image: "",
         skills: ["JavaScript", "jQuery", "HTML", "Bootstrap"],
         demoConfig: { isDemoEnabled: true, link: "https://danielpitfield.github.io/Noughts-and-Crosses/" },
