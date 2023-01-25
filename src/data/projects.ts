@@ -1,6 +1,7 @@
 import { SkillName } from "./skills";
 
 import Wingo from "/Images/Projects/wingo.png";
+import F1Dashboard from "/Images/Projects/f1Dashboard.png";
 import GibbsRules from "/Images/Projects/gibbsRules.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
 
@@ -33,7 +34,7 @@ export const Projects: ProjectConfig[] = [
     status: "In Development",
     description:
       "A website for everything Formula One including a countdown to the next Grand Prix weekend session and statistics for the current drivers, teams and more!",
-    image: "",
+    image: F1Dashboard,
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://f1-dashboard-danielpitfield.vercel.app/" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/F1-Dashboard" },
@@ -68,7 +69,7 @@ export const Projects: ProjectConfig[] = [
     size: "large",
     description: "A web-based crime mapping, visualisation and analysis solution using the Google Maps JavaScript API",
     image: CrimeMapper,
-    skills: ["JavaScript", "jQuery", "Google Cloud", "PHP", "MySQL", "HTML", "Bootstrap"],
+    skills: ["JavaScript", "jQuery", "Google Cloud", "PHP", "MySQL", "Bootstrap"],
     demoConfig: { isDemoEnabled: false, reason: "Hosting costs" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Crime_Mapper" },
   },
