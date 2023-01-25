@@ -6,6 +6,8 @@ import GibbsRules from "/Images/Projects/gibbsRules.png";
 import F1Quotes from "/Images/Projects/f1Quotes.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
 import AdventOfCode from "/Images/Projects/adventOfCode.png";
+import NoughtsAndCrossesNew from "/Images/Projects/noughtsAndCrossesNew.png";
+import NoughtsAndCrossesOld from "/Images/Projects/noughtsAndCrossesOld.png";
 
 export type ProjectConfig = {
   name: string;
@@ -108,7 +110,7 @@ export const Projects: ProjectConfig[] = [
     size: "small",
     description:
       "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players!",
-    image: "",
+    image: NoughtsAndCrossesNew,
     skills: ["TypeScript", "React", "Tailwind"],
     demoConfig: { isDemoEnabled: true, link: "https://noughts-and-crosses-react.vercel.app/" },
     viewCodeConfig: {
@@ -122,7 +124,7 @@ export const Projects: ProjectConfig[] = [
         status: "Deprecated",
         description:
           "Play against an AI opponent that evaluates moves using the unbeatable Minimax algorithm or as two human players!",
-        image: "",
+        image: NoughtsAndCrossesOld,
         skills: ["JavaScript", "jQuery", "HTML", "Bootstrap"],
         demoConfig: { isDemoEnabled: true, link: "https://danielpitfield.github.io/Noughts-and-Crosses/" },
         viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Noughts_and_Crosses" },
