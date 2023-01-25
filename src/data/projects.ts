@@ -39,7 +39,8 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Gibbs Rules",
     size: "large",
-    description: "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS). Who said Gibbs' rules aren't written down anywhere?",
+    description:
+      "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS). Who said Gibbs' rules aren't written down anywhere?",
     image: "",
     skills: ["TypeScript", "React", "Next.js", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app" },
@@ -48,7 +49,8 @@ export const Projects: ProjectConfig[] = [
       {
         name: "F1 Quotes",
         size: "large",
-        description: "Daily quotes from the people of Formula One including Martin Brundle grid walk drama, iconic Crofty commentary and the legendary late Murray Walker!",
+        description:
+          "Daily quotes from the people of Formula One including Martin Brundle grid walk drama, iconic Crofty commentary and the legendary late Murray Walker!",
         image: "",
         skills: ["TypeScript", "React", "Next.js", "SASS"],
         demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app/?=F1" },
@@ -71,8 +73,7 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Becky G Duolingo",
     size: "small",
-    description:
-      "Chrome extension to replace the images on Duolingo with Becky G! ¿Quieres aprender español con ella?",
+    description: "Chrome extension to replace the images on Duolingo with Becky G! ¿Quieres aprender español con ella?",
     image: "",
     skills: ["TypeScript", "React", "CSS"],
     demoConfig: {
@@ -85,8 +86,7 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Advent of Code",
     size: "small",
-    description:
-      "Solutions to an advent calendar of programming puzzles! Top 3% time for Day 2, Day 6 and Day 10!",
+    description: "Solutions to an advent calendar of programming puzzles! Top 3% time for Day 2, Day 6 and Day 10!",
     image: "",
     skills: ["TypeScript"],
     demoConfig: {
