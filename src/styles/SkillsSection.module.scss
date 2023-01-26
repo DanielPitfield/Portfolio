@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   min-height: 50vh;
+  background-color: #292d38;
 
   .title {
     display: flex;
@@ -16,11 +17,9 @@
 .list {
   display: flex;
   margin: 0.1rem 0.2rem;
-  @media ($mobile) {
-    flex-wrap: wrap;
-    align-items: center;
-    &[data-size="section"] {
-      justify-content: center;
-    }
+  flex-wrap: wrap;
+  align-items: center;
+  &[data-size="section"] {
+    justify-content: center;
   }
 }

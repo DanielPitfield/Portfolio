@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding-top: 4em;
+  @media ($mobile) {
+    padding-top: 0;
+  }
 
   .title {
     display: flex;

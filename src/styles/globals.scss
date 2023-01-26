@@ -55,5 +55,10 @@ button {
 }
 
 section {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
+  &#home {
+    background-image: url("/Images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
