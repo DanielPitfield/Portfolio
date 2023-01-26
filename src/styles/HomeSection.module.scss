@@ -20,6 +20,9 @@
     letter-spacing: 0.01em;
     justify-content: center;
     text-align: center;
+    @media ($mobile) {
+      padding: 0.2em 0;
+    }
   }
 
   .subTitle {
