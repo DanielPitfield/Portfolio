@@ -109,7 +109,7 @@ export const Projects: ProjectConfig[] = [
     },
   },
   {
-    name: "Noughts and Crosses",
+    name: "Noughts & Crosses",
     size: "small",
     description:
       "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players!",
