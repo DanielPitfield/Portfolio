@@ -87,9 +87,8 @@ export const Projects: ProjectConfig[] = [
     image: BeckyGDuolingo,
     skills: ["TypeScript", "React", "CSS"],
     demoConfig: {
-      isDemoEnabled: false,
-      reason:
-        "Clone the project and create a production build using the command:\nnpm run build\nNavigate to Chrome extensions and select the 'dist' output folder using the 'Load Unpacked' option",
+      isDemoEnabled: true,
+      link: "https://chrome.google.com/webstore/detail/becky-g-duolingo/fmgiakeojakaokcmkcigkafikjjbafld",
     },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Becky-G-Duolingo" },
   },
