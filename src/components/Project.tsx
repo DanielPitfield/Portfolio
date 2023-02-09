@@ -12,7 +12,6 @@ interface ProjectProps {
   projectConfig: ProjectConfig;
 }
 
-// TODO: Carousel of images showing the project?
 const Project = (props: ProjectProps) => {
   const [selectedVariant, setSelectedVariant] = useState<ProjectConfig>(props.projectConfig);
 
