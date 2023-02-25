@@ -47,7 +47,7 @@ export const Projects: ProjectConfig[] = [
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/F1-Dashboard" },
     additionalVariants: [
       {
-        name: "Alice in Borderland Dashboard",
+        name: "AiB Dashboard",
         size: "large",
         description:
           "A website for everything Alice in Borderland (the TV show) including profile pages for all the main characters and all the card games!",
