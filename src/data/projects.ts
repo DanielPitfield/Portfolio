@@ -32,7 +32,7 @@ export const Projects: ProjectConfig[] = [
       "A game based on Wordle but with more content (22+ unique game modes), better replayability, configurable gamemode settings and a dedicated campaign!",
     image: Wingo,
     skills: ["TypeScript", "React", "SASS"],
-    demoConfig: { isDemoEnabled: true, link: "https://wingo-danielpitfield.vercel.app/" },
+    demoConfig: { isDemoEnabled: true, link: "https://wingo-danielpitfield.vercel.app" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Wingo" },
   },
   {
@@ -43,7 +43,7 @@ export const Projects: ProjectConfig[] = [
       "A website for everything Formula One including a countdown to the next Grand Prix weekend session and statistics for the current drivers, teams and more!",
     image: F1Dashboard,
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
-    demoConfig: { isDemoEnabled: true, link: "https://f1-dashboard-danielpitfield.vercel.app/" },
+    demoConfig: { isDemoEnabled: true, link: "https://f1-dashboard-danielpitfield.vercel.app" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/F1-Dashboard" },
     additionalVariants: [
       {
@@ -127,7 +127,7 @@ export const Projects: ProjectConfig[] = [
       "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players!",
     image: NoughtsAndCrossesNew,
     skills: ["TypeScript", "React", "Tailwind"],
-    demoConfig: { isDemoEnabled: true, link: "https://noughts-and-crosses-react.vercel.app/" },
+    demoConfig: { isDemoEnabled: true, link: "https://noughts-and-crosses-react.vercel.app" },
     viewCodeConfig: {
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/noughts-and-crosses-react",
