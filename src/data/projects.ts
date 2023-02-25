@@ -3,6 +3,7 @@ import { SkillName } from "./skills";
 // Project images
 import Wingo from "/Images/Projects/wingo.png";
 import F1Dashboard from "/Images/Projects/f1Dashboard.png";
+import AliceInBorderlandDashboard from "/Images/Projects/aliceInBorderlandDashboard.png";
 import GibbsRules from "/Images/Projects/gibbsRules.png";
 import F1Quotes from "/Images/Projects/f1Quotes.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
@@ -44,6 +45,19 @@ export const Projects: ProjectConfig[] = [
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
     demoConfig: { isDemoEnabled: true, link: "https://f1-dashboard-danielpitfield.vercel.app/" },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/F1-Dashboard" },
+    additionalVariants: [
+      {
+        name: "Alice in Borderland Dashboard",
+        size: "large",
+        description:
+          "A website for everything Alice in Borderland (the TV show) including profile pages for all the main characters and all the card games!",
+        image: AliceInBorderlandDashboard,
+        skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
+        // TODO: Add deployment link
+        demoConfig: { isDemoEnabled: true, link: "" },
+        viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Alice-in-Borderland" },
+      },
+    ],
   },
   {
     name: "Gibbs Rules",
