@@ -53,8 +53,7 @@ export const Projects: ProjectConfig[] = [
           "A website for everything Alice in Borderland (the TV show) including profile pages for all the main characters and all the card games!",
         image: AliceInBorderlandDashboard,
         skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
-        // TODO: Add deployment link
-        demoConfig: { isDemoEnabled: true, link: "" },
+        demoConfig: { isDemoEnabled: true, link: "https://alice-in-borderland.vercel.app" },
         viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Alice-in-Borderland" },
       },
     ],
