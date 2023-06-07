@@ -24,7 +24,7 @@ export const SkillMappings = [
   { name: "jQuery", icon: jQuery, isDisplayed: false },
   { name: "React", icon: React, isDisplayed: true },
   { name: "Next.js", icon: NextJS, isDisplayed: true },
-  { name: "tRPC", icon: tRPC, isDisplayed: true },
+  { name: "tRPC", icon: tRPC, isDisplayed: false },
   { name: "PHP", icon: PHP, isDisplayed: false },
   { name: "MySQL", icon: MySQL, isDisplayed: false },
   { name: "HTML", icon: HTML, isDisplayed: true },
