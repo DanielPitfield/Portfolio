@@ -6,6 +6,7 @@ import NextJS from "/Images/Skills/nextjs.svg";
 import tRPC from "/Images/Skills/trpc.svg";
 import PHP from "/Images/Skills/php.svg";
 import MySQL from "/Images/Skills/mysql.svg";
+import Node from "/Images/Skills/node.svg";
 import HTML from "/Images/Skills/html.svg";
 import SASS from "/Images/Skills/sass.svg";
 import Tailwind from "/Images/Skills/tailwind.svg";
@@ -16,7 +17,7 @@ import Git from "/Images/Skills/git.svg";
 import GoogleCloud from "/Images/Skills/googlecloud.svg";
 import VSCode from "/Images/Skills/vscode.svg";
 
-export type SkillName = typeof skillNames[number];
+export type SkillName = (typeof skillNames)[number];
 
 export const SkillMappings = [
   { name: "TypeScript", icon: TypeScript, isDisplayed: true },
@@ -27,6 +28,7 @@ export const SkillMappings = [
   { name: "tRPC", icon: tRPC, isDisplayed: false },
   { name: "PHP", icon: PHP, isDisplayed: false },
   { name: "MySQL", icon: MySQL, isDisplayed: false },
+  { name: "Node.js", icon: Node, isDisplayed: true },
   { name: "HTML", icon: HTML, isDisplayed: true },
   { name: "SASS", icon: SASS, isDisplayed: true },
   { name: "Tailwind", icon: Tailwind, isDisplayed: false },
@@ -41,4 +43,6 @@ export const SkillMappings = [
 const skillNames = SkillMappings.map((skill) => skill.name);
 
 // What are the names of the skills that are to be displayed in the 'Skills' section?
-export const displayedSkills: SkillName[] = SkillMappings.filter((skill) => skill.isDisplayed).map((skill) => skill.name);
+export const displayedSkills: SkillName[] = SkillMappings.filter((skill) => skill.isDisplayed).map(
+  (skill) => skill.name
+);
