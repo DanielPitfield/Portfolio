@@ -98,7 +98,7 @@ export const Projects: ProjectConfig[] = [
     name: "Foodie Fastlane",
     size: "small",
     status: "In Development",
-    description: "Chrome extension to automatically place orders for online takeaways!",
+    description: "Chrome extension to automatically remember and place orders for your favourite online takeaways!",
     image: FoodieFastlane,
     skills: ["TypeScript", "React", "CSS"],
     demoConfig: { isDemoEnabled: false, reason: "Not published on Chrome Web Store" },
