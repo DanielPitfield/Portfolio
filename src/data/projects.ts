@@ -7,10 +7,11 @@ import AliceInBorderlandDashboard from "/Images/Projects/aliceInBorderlandDashbo
 import GibbsRules from "/Images/Projects/gibbsRules.png";
 import F1Quotes from "/Images/Projects/f1Quotes.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
+import FoodieFastlane from "/Images/Projects/foodieFastlane.png";
 import BeckyGDuolingo from "/Images/Projects/beckyGDuolingo.png";
 import AdventOfCode from "/Images/Projects/adventOfCode.png";
-import NoughtsAndCrossesNew from "/Images/Projects/noughtsAndCrossesNew.png";
-import NoughtsAndCrossesOld from "/Images/Projects/noughtsAndCrossesOld.png";
+//import NoughtsAndCrossesNew from "/Images/Projects/noughtsAndCrossesNew.png";
+//import NoughtsAndCrossesOld from "/Images/Projects/noughtsAndCrossesOld.png";
 
 export type ProjectConfig = {
   name: string;
@@ -94,6 +95,19 @@ export const Projects: ProjectConfig[] = [
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Crime_Mapper" },
   },
   {
+    name: "Foodie Fastlane",
+    size: "small",
+    status: "In Development",
+    description: "Chrome extension to automatically place orders for online takeaways!",
+    image: FoodieFastlane,
+    skills: ["TypeScript", "React", "CSS"],
+    demoConfig: { isDemoEnabled: false, reason: "Not published on Chrome Web Store" },
+    viewCodeConfig: {
+      isViewCodeEnabled: true,
+      link: "https://github.com/DanielPitfield/Foodie-Fastlane",
+    },
+  },
+  {
     name: "Becky G Duolingo",
     size: "small",
     description: "Chrome extension to replace the images on Duolingo with Becky G! ¿Quieres aprender español con ella?",
@@ -120,6 +134,7 @@ export const Projects: ProjectConfig[] = [
       link: "https://github.com/DanielPitfield/advent-of-code-2022",
     },
   },
+  /*
   {
     name: "Noughts & Crosses",
     size: "small",
@@ -146,4 +161,5 @@ export const Projects: ProjectConfig[] = [
       },
     ],
   },
+  */
 ];
