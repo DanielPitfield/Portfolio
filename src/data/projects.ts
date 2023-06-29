@@ -16,7 +16,7 @@ import AdventOfCode from "/Images/Projects/adventOfCode.png";
 export type ProjectConfig = {
   name: string;
   size: "small" | "large";
-  status?: "In Development" | "Deprecated";
+  status?: "In Development" | "Deprecated" | "Personal Favourite";
   description: string;
   image: string;
   skills: SkillName[];
@@ -110,6 +110,7 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Becky G Duolingo",
     size: "small",
+    status: "Personal Favourite",
     description: "Chrome extension to replace the images on Duolingo with Becky G! ¿Quieres aprender español con ella?",
     image: BeckyGDuolingo,
     skills: ["TypeScript", "React", "CSS"],
