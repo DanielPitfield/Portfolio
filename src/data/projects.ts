@@ -125,7 +125,7 @@ export const Projects: ProjectConfig[] = [
     size: "small",
     description: "Solutions to an advent calendar of programming puzzles! Top 3% time for Day 2, Day 6 and Day 10!",
     image: AdventOfCode,
-    skills: ["TypeScript", "npm"],
+    skills: ["TypeScript", "Node.js"],
     demoConfig: {
       isDemoEnabled: false,
       reason: "Run a solution file with ts-node and the npm package runner using the command:\nnpx ts-node script.ts",
