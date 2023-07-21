@@ -6,13 +6,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  @media ($mobile) {
-    margin-top: 2em;
-  }
+
   @media ($desktop) {
     position: absolute;
     left: 0;
     top: 43.5vh;
+  }
+
+  @media ($mobile) {
+    margin-top: 2em;
   }
 
   .item {
@@ -36,6 +38,7 @@
       margin: 0;
       font-size: 1.5em;
       font-weight: 400;
+
       @media ($mobile) {
         padding: 0.7em 3em;
       }

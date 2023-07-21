@@ -5,7 +5,7 @@ const HomeSection = () => {
   return (
     <section className={styles.wrapper} id="home">
       <h1 className={styles.title}>Daniel Pitfield</h1>
-      <h3 className={styles.subTitle}>Web Developer</h3>
+      <h2 className={styles.subTitle}>Web Developer</h2>
       <a className={styles.link} href="#projects">
         Browse Projects
       </a>

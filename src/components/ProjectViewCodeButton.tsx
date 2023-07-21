@@ -1,23 +1,22 @@
 import styles from "../styles/Project.module.scss";
 
+import { ProjectConfig } from "../data/projects";
 import { BiCodeAlt } from "react-icons/bi";
 
 interface ProjectViewCodeButtonProps {
-  viewCodeConfig: { isViewCodeEnabled: false; reason?: string } | { isViewCodeEnabled: true; link: string };
+  viewCodeConfig: ProjectConfig["viewCodeConfig"];
 }
 
 const ProjectViewCodeButton = (props: ProjectViewCodeButtonProps) => {
   return (
     <a
       className={styles.link}
-      tabIndex={0}
-      data-is-disabled={!props.viewCodeConfig.isViewCodeEnabled}
-      title={
-        !props.viewCodeConfig.isViewCodeEnabled && props.viewCodeConfig.reason ? props.viewCodeConfig.reason : undefined
-      }
       href={props.viewCodeConfig.isViewCodeEnabled ? props.viewCodeConfig.link : undefined}
+      title={!props.viewCodeConfig.isViewCodeEnabled ? props.viewCodeConfig.reason : undefined}
       target="_blank"
       rel="noreferrer"
+      tabIndex={0}
+      data-is-disabled={!props.viewCodeConfig.isViewCodeEnabled}
     >
       <BiCodeAlt className={styles.icon} /> View Code
     </a>
