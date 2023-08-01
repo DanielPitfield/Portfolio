@@ -35,7 +35,7 @@ export const SkillMappings = [
   { name: "Tailwind", icon: Tailwind, isDisplayed: false },
   { name: "Bootstrap", icon: Bootstrap, isDisplayed: false },
   { name: "CSS", icon: CSS, isDisplayed: true },
-  { name: "Rust", icon: Rust, isDisplayed: true },
+  { name: "Rust", icon: Rust, isDisplayed: false },
   { name: "npm", icon: npm, isDisplayed: true },
   { name: "Git", icon: Git, isDisplayed: true },
   { name: "Google Cloud", icon: GoogleCloud, isDisplayed: false },
