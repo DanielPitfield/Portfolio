@@ -145,7 +145,7 @@ export const Projects: ProjectConfig[] = [
         demoConfig: {
           isDemoEnabled: false,
           reason:
-            "Run a solution file with Cargo (Rust package manager) by navigating to the root directory of a package (a seperate package is used for each day) and using the command:\ncargo run",
+            "Run a solution file with Cargo (Rust package manager)\nby navigating to the root directory of a package and using the command:\ncargo run",
         },
         viewCodeConfig: {
           isViewCodeEnabled: true,
