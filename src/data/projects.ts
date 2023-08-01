@@ -134,6 +134,25 @@ export const Projects: ProjectConfig[] = [
       isViewCodeEnabled: true,
       link: "https://github.com/DanielPitfield/advent-of-code-2022",
     },
+    additionalVariants: [
+      {
+        name: "2021",
+        size: "small",
+        status: "In Development",
+        description: "Solutions to an advent calendar of programming puzzles as a way of learning Rust!",
+        image: AdventOfCode,
+        skills: ["Rust"],
+        demoConfig: {
+          isDemoEnabled: false,
+          reason:
+            "Run a solution file with Cargo (Rust package manager) by navigating to the root directory of a package (a seperate package is used for each day) and using the command:\ncargo run",
+        },
+        viewCodeConfig: {
+          isViewCodeEnabled: true,
+          link: "https://github.com/DanielPitfield/advent-of-code-2021",
+        },
+      },
+    ],
   },
   /*
   {
