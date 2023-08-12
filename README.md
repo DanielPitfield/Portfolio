@@ -24,14 +24,3 @@ Personal website to showcase projects
 * Projects have an optional status (an example being to indicate which projects are currently under development)
 * Each project has two buttons, the first labelled **'Live Demo'** being to a live link to a deployment of the project and the other labelled **'View Code'** being a link to the repository (source code)
 * **If these buttons are disabled, tooltip text may explain the reason or provide additional information**
-
-#### Large Projects
-* Wingo
-* F1 Dashboard
-* Gibbs Rules
-* Crime Mapper
-
-#### Small Projects
-* Advent of Code
-* Becky G Duolingo
-* Noughts and Crosses
