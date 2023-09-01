@@ -11,7 +11,7 @@ const ProjectDemoButton = (props: ProjectDemoButtonProps) => {
   return (
     <a
       className={styles.link}
-      href={props.demoConfig.isDemoEnabled ? props.demoConfig.link : undefined}
+      href={props.demoConfig.isDemoEnabled ? props.demoConfig.link.toString() : undefined}
       title={!props.demoConfig.isDemoEnabled ? props.demoConfig.reason : undefined}
       target="_blank"
       rel="noreferrer"

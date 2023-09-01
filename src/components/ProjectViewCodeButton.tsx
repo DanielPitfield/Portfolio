@@ -11,7 +11,7 @@ const ProjectViewCodeButton = (props: ProjectViewCodeButtonProps) => {
   return (
     <a
       className={styles.link}
-      href={props.viewCodeConfig.isViewCodeEnabled ? props.viewCodeConfig.link : undefined}
+      href={props.viewCodeConfig.isViewCodeEnabled ? props.viewCodeConfig.link.toString() : undefined}
       title={!props.viewCodeConfig.isViewCodeEnabled ? props.viewCodeConfig.reason : undefined}
       target="_blank"
       rel="noreferrer"
