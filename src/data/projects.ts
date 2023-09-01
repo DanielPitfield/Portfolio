@@ -19,8 +19,8 @@ export type ProjectConfig = {
   description: string;
   image: string;
   skills: SkillName[];
-  demoConfig: { isDemoEnabled: false; reason: string } | { isDemoEnabled: true; link: string };
-  viewCodeConfig: { isViewCodeEnabled: false; reason: string } | { isViewCodeEnabled: true; link: string };
+  demoConfig: { isDemoEnabled: false; reason: string } | { isDemoEnabled: true; link: URL };
+  viewCodeConfig: { isViewCodeEnabled: false; reason: string } | { isViewCodeEnabled: true; link: URL };
   additionalVariants?: ProjectConfig[];
 };
 
@@ -32,8 +32,8 @@ export const Projects: ProjectConfig[] = [
       "A game based on Wordle but with more content (22+ unique game modes), better replayability, configurable gamemode settings and a dedicated campaign!",
     image: Wingo,
     skills: ["TypeScript", "React", "SASS"],
-    demoConfig: { isDemoEnabled: true, link: "https://wingo-danielpitfield.vercel.app" },
-    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Wingo" },
+    demoConfig: { isDemoEnabled: true, link: new URL("https://wingo-danielpitfield.vercel.app") },
+    viewCodeConfig: { isViewCodeEnabled: true, link: new URL("https://github.com/DanielPitfield/Wingo") },
   },
   {
     name: "AiB Dashboard",
@@ -42,8 +42,8 @@ export const Projects: ProjectConfig[] = [
       "A website for everything Alice in Borderland (the TV show) including profile pages for all the main characters and all the card games!",
     image: AliceInBorderlandDashboard,
     skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
-    demoConfig: { isDemoEnabled: true, link: "https://alice-in-borderland.vercel.app" },
-    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Alice-in-Borderland" },
+    demoConfig: { isDemoEnabled: true, link: new URL("https://alice-in-borderland.vercel.app") },
+    viewCodeConfig: { isViewCodeEnabled: true, link: new URL("https://github.com/DanielPitfield/Alice-in-Borderland") },
     additionalVariants: [
       {
         name: "F1 Dashboard",
@@ -53,8 +53,8 @@ export const Projects: ProjectConfig[] = [
           "A website for everything Formula One including a countdown to the next Grand Prix weekend session and statistics for the current drivers, teams and more!",
         image: F1Dashboard,
         skills: ["TypeScript", "React", "Next.js", "tRPC", "SASS"],
-        demoConfig: { isDemoEnabled: true, link: "https://f1-dashboard-danielpitfield.vercel.app" },
-        viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/F1-Dashboard" },
+        demoConfig: { isDemoEnabled: true, link: new URL("https://f1-dashboard-danielpitfield.vercel.app") },
+        viewCodeConfig: { isViewCodeEnabled: true, link: new URL("https://github.com/DanielPitfield/F1-Dashboard") },
       },
     ],
   },
@@ -65,8 +65,8 @@ export const Projects: ProjectConfig[] = [
       "Daily Gibbs rule, Ziva misquote and side character quote (from the TV show NCIS). Who said Gibbs' rules aren't written down anywhere?",
     image: GibbsRules,
     skills: ["TypeScript", "React", "Next.js", "SASS"],
-    demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app" },
-    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Gibbs-Rules" },
+    demoConfig: { isDemoEnabled: true, link: new URL("https://gibbs-rules.vercel.app") },
+    viewCodeConfig: { isViewCodeEnabled: true, link: new URL("https://github.com/DanielPitfield/Gibbs-Rules") },
     additionalVariants: [
       {
         name: "F1 Quotes",
@@ -75,10 +75,10 @@ export const Projects: ProjectConfig[] = [
           "Daily quotes from the people of Formula One including Martin Brundle grid walk drama, iconic Crofty commentary and the legendary late Murray Walker!",
         image: F1Quotes,
         skills: ["TypeScript", "React", "Next.js", "SASS"],
-        demoConfig: { isDemoEnabled: true, link: "https://gibbs-rules.vercel.app/?=F1" },
+        demoConfig: { isDemoEnabled: true, link: new URL("https://gibbs-rules.vercel.app/?=F1") },
         viewCodeConfig: {
           isViewCodeEnabled: true,
-          link: "https://github.com/DanielPitfield/Gibbs-Rules/blob/main/app/%5B%5B...quoteContext%5D%5D/page.tsx",
+          link: new URL("https://github.com/DanielPitfield/Gibbs-Rules/blob/main/app/%5B%5B...quoteContext%5D%5D/page.tsx"),
         },
       },
     ],
@@ -91,7 +91,7 @@ export const Projects: ProjectConfig[] = [
     // The project also uses jQuery and HTML, but show fewer technologies to prevent wrapping onto new line
     skills: ["JavaScript", "Google Cloud", "PHP", "MySQL", "Bootstrap"],
     demoConfig: { isDemoEnabled: false, reason: "Hosting costs" },
-    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Crime_Mapper" },
+    viewCodeConfig: { isViewCodeEnabled: true, link: new URL("https://github.com/DanielPitfield/Crime_Mapper") },
   },
   {
     name: "Foodie Fastlane",
@@ -103,7 +103,7 @@ export const Projects: ProjectConfig[] = [
     demoConfig: { isDemoEnabled: false, reason: "Not published on Chrome Web Store" },
     viewCodeConfig: {
       isViewCodeEnabled: true,
-      link: "https://github.com/DanielPitfield/Foodie-Fastlane",
+      link: new URL("https://github.com/DanielPitfield/Foodie-Fastlane"),
     },
   },
   {
@@ -115,9 +115,9 @@ export const Projects: ProjectConfig[] = [
     skills: ["TypeScript", "React", "CSS"],
     demoConfig: {
       isDemoEnabled: true,
-      link: "https://chrome.google.com/webstore/detail/becky-g-duolingo/fmgiakeojakaokcmkcigkafikjjbafld",
+      link: new URL("https://chrome.google.com/webstore/detail/becky-g-duolingo/fmgiakeojakaokcmkcigkafikjjbafld"),
     },
-    viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Becky-G-Duolingo" },
+    viewCodeConfig: { isViewCodeEnabled: true, link: new URL("https://github.com/DanielPitfield/Becky-G-Duolingo") },
     additionalVariants: [
       {
         name: "Juicer Tier List",
@@ -127,11 +127,11 @@ export const Projects: ProjectConfig[] = [
         skills: ["TypeScript", "React", "Next.js", "SASS"],
         demoConfig: {
           isDemoEnabled: true,
-          link: "https://juicer-tier-list.vercel.app",
+          link: new URL("https://juicer-tier-list.vercel.app"),
         },
         viewCodeConfig: {
           isViewCodeEnabled: true,
-          link: "https://github.com/DanielPitfield/Tier-List",
+          link: new URL("https://github.com/DanielPitfield/Tier-List"),
         },
       },
     ],
@@ -148,7 +148,7 @@ export const Projects: ProjectConfig[] = [
     },
     viewCodeConfig: {
       isViewCodeEnabled: true,
-      link: "https://github.com/DanielPitfield/advent-of-code-2022",
+      link: new URL("https://github.com/DanielPitfield/advent-of-code-2022"),
     },
     additionalVariants: [
       {
@@ -165,7 +165,7 @@ export const Projects: ProjectConfig[] = [
         },
         viewCodeConfig: {
           isViewCodeEnabled: true,
-          link: "https://github.com/DanielPitfield/advent-of-code-2021",
+          link: new URL("https://github.com/DanielPitfield/advent-of-code-2021"),
         },
       },
     ],
