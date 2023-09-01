@@ -9,9 +9,8 @@ import F1Quotes from "/Images/Projects/f1Quotes.png";
 import CrimeMapper from "/Images/Projects/crimeMapper.png";
 import FoodieFastlane from "/Images/Projects/foodieFastlane.png";
 import BeckyGDuolingo from "/Images/Projects/beckyGDuolingo.png";
+import TierList from "/Images/Projects/tierList.png";
 import AdventOfCode from "/Images/Projects/adventOfCode.png";
-//import NoughtsAndCrossesNew from "/Images/Projects/noughtsAndCrossesNew.png";
-//import NoughtsAndCrossesOld from "/Images/Projects/noughtsAndCrossesOld.png";
 
 export type ProjectConfig = {
   name: string;
@@ -119,6 +118,23 @@ export const Projects: ProjectConfig[] = [
       link: "https://chrome.google.com/webstore/detail/becky-g-duolingo/fmgiakeojakaokcmkcigkafikjjbafld",
     },
     viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Becky-G-Duolingo" },
+    additionalVariants: [
+      {
+        name: "Juicer Tier List",
+        size: "small",
+        description: "Rank items (Juicers, F1 Drivers and more) in tiers from best to worst! How could you not put Becky G in S tier?",
+        image: TierList,
+        skills: ["TypeScript", "React", "Next.js", "SASS"],
+        demoConfig: {
+          isDemoEnabled: true,
+          link: "https://juicer-tier-list.vercel.app",
+        },
+        viewCodeConfig: {
+          isViewCodeEnabled: true,
+          link: "https://github.com/DanielPitfield/Tier-List",
+        },
+      },
+    ],
   },
   {
     name: "Advent of Code",
@@ -154,32 +170,4 @@ export const Projects: ProjectConfig[] = [
       },
     ],
   },
-  /*
-  {
-    name: "Noughts & Crosses",
-    size: "small",
-    description:
-      "Play against an AI opponent (which uses the unbeatable Minimax algorithm on the highest difficulty) or as two human players!",
-    image: NoughtsAndCrossesNew,
-    skills: ["TypeScript", "React", "Tailwind"],
-    demoConfig: { isDemoEnabled: true, link: "https://noughts-and-crosses-react.vercel.app" },
-    viewCodeConfig: {
-      isViewCodeEnabled: true,
-      link: "https://github.com/DanielPitfield/noughts-and-crosses-react",
-    },
-    additionalVariants: [
-      {
-        name: "Older version",
-        size: "small",
-        status: "Deprecated",
-        description:
-          "Play against an AI opponent that evaluates moves using the unbeatable Minimax algorithm or as two human players!",
-        image: NoughtsAndCrossesOld,
-        skills: ["JavaScript", "jQuery", "HTML", "Bootstrap"],
-        demoConfig: { isDemoEnabled: true, link: "https://danielpitfield.github.io/Noughts-and-Crosses/" },
-        viewCodeConfig: { isViewCodeEnabled: true, link: "https://github.com/DanielPitfield/Noughts_and_Crosses" },
-      },
-    ],
-  },
-  */
 ];
