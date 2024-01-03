@@ -15,7 +15,7 @@ import AdventOfCode from "/Images/Projects/adventOfCode.png";
 export type ProjectConfig = {
   name: string;
   size: "small" | "large";
-  status?: "In Development" | "Deprecated" | "Personal Favourite";
+  status?: "In Development" | "Deprecated";
   description: string;
   image: string;
   skills: SkillName[];
@@ -109,7 +109,6 @@ export const Projects: ProjectConfig[] = [
   {
     name: "Becky G Duolingo",
     size: "small",
-    status: "Personal Favourite",
     description: "Chrome extension to replace the images on Duolingo with Becky G! ¿Quieres aprender español con ella?",
     image: BeckyGDuolingo,
     skills: ["TypeScript", "React", "CSS"],
@@ -150,24 +149,5 @@ export const Projects: ProjectConfig[] = [
       isViewCodeEnabled: true,
       link: new URL("https://github.com/DanielPitfield/advent-of-code-2022"),
     },
-    additionalVariants: [
-      {
-        name: "2021",
-        size: "small",
-        status: "In Development",
-        description: "Solutions to an advent calendar of programming puzzles as a way of learning Rust!",
-        image: AdventOfCode,
-        skills: ["Rust"],
-        demoConfig: {
-          isDemoEnabled: false,
-          reason:
-            "Run a solution file with Cargo (Rust package manager)\nby navigating to the root directory of a package and using the command:\ncargo run",
-        },
-        viewCodeConfig: {
-          isViewCodeEnabled: true,
-          link: new URL("https://github.com/DanielPitfield/advent-of-code-2021"),
-        },
-      },
-    ],
   },
 ];

@@ -12,7 +12,6 @@ import SASS from "/Images/Skills/sass.svg";
 import Tailwind from "/Images/Skills/tailwind.svg";
 import Bootstrap from "/Images/Skills/bootstrap.svg";
 import CSS from "/Images/Skills/css.svg";
-import Rust from "/Images/Skills/rust.svg";
 import npm from "/Images/Skills/npm.svg";
 import Git from "/Images/Skills/git.svg";
 import GoogleCloud from "/Images/Skills/googlecloud.svg";
@@ -35,7 +34,6 @@ export const SkillMappings = [
   { name: "Tailwind", icon: Tailwind, isDisplayed: false },
   { name: "Bootstrap", icon: Bootstrap, isDisplayed: false },
   { name: "CSS", icon: CSS, isDisplayed: true },
-  { name: "Rust", icon: Rust, isDisplayed: false },
   { name: "npm", icon: npm, isDisplayed: true },
   { name: "Git", icon: Git, isDisplayed: true },
   { name: "Google Cloud", icon: GoogleCloud, isDisplayed: false },
